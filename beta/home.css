@@ -155,3 +155,11 @@ sup{
 .neh {
   padding-bottom: 1rem;
 }
+
+.card__time{
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-top: 95%;
+  vertical-align: bottom;
+  text-transform: uppercase;
+}
