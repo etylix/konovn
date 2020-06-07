@@ -121,7 +121,7 @@ blockquote {
 }
 
 /* Mobiles */
-@media screen and (min-width: 411px) and (max-width: 767px) {
+@media screen and (min-width: 361px) and (max-width: 767px) {
 	.card-time {
 		margin-top: 80%;
 	}
