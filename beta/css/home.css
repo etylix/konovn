@@ -106,12 +106,9 @@ blockquote {
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
- 	background-attachment: fixed;
+ 	background-attachment: scroll;
  	-ms-overflow-style: none;
  	text-align: center;
-	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
 }
 
 .bg-filter {
