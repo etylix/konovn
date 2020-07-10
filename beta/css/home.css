@@ -103,10 +103,11 @@ blockquote {
 
 .welc-bg {
 	background-image: url(bg.jpg);
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
- 	background-attachment: scroll;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	background-position: center center;
  	-ms-overflow-style: none;
  	text-align: center;
 }
@@ -129,13 +130,19 @@ blockquote {
 }
 
 .about p {
-	font-size: 20px;
+	margin: 0 1px;
 	color: white;
 	padding: 5px 20px;
+	vertical-align: middle;
+	text-align: left;
 
 }
 .about {
 	min-height: 100vh;
+}
+
+.mg-50 {
+	margin-top: 47%;
 }
 
 .about-bg-kn {
@@ -235,6 +242,10 @@ blockquote {
 		padding: 15px;
 	}
 
+	.about p {
+		font-size: 15px
+	}
+
 }
 /* Desktop */
 @media screen and (min-width: 1024px) {
@@ -326,6 +337,9 @@ blockquote {
 	.welc i {
 		padding: 25px;
 	}
+	.about p {
+		font-size: 30px;
+	}
 
 }
 
@@ -376,6 +390,7 @@ blockquote {
 
 	.dt {
 		display: none;
+		padding-top: 10px;
 	}
 
 	.welc p,i {
@@ -385,6 +400,10 @@ blockquote {
 
 	.welc i {
 		padding: 15px;
+	}
+
+	.about p {
+		font-size: 18px;
 	}
 
 }
@@ -436,6 +455,7 @@ blockquote {
 
 	.dt {
 		display: none;
+		padding-top: 10px;
 	}
 
 	.welc p,i {
@@ -446,6 +466,10 @@ blockquote {
 
 	.welc i {
 		padding: 25px;
+	}
+
+	.about p {
+		font-size: 29px;
 	}
 }
 
@@ -600,11 +624,11 @@ hr {
 .anibg {
 	background-image: url(anibg.jpg);
 	min-height: 100vh;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
- 	background-attachment: fixed;
-
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	background-position: center center;
 }
 
 .fa-facebook {
