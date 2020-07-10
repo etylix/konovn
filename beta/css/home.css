@@ -18,6 +18,7 @@ body {
 	background-repeat: no-repeat;
  	background-attachment: fixed;
  	-ms-overflow-style: none;
+ 	color: white;
 }
 
 ::-webkit-scrollbar {
@@ -46,7 +47,7 @@ blockquote {
 }
 
 .hed {
-	font-size: 1.7rem;
+	font-size: 27.2px;
 	color: white;
 	text-align: center;
 }
@@ -68,17 +69,19 @@ blockquote {
 .button {
 	padding: 15px 40px;
 	border-radius: 30px;
-	color: white;
+	color: rgba(255,255,255,1);
 	bottom: 0;
 	position: absolute;
 	-ms-transform: translate(-50%, -50%);
   	transform: translate(-50%, -50%);
   	margin: 20px 0;
+  	user-select: none;
 
 }
 
 .button-bg {
 	backdrop-filter: blur(15px);
+	-webkit-backdrop-filter: blur(15px);
 }
 
 .welc {
@@ -88,7 +91,7 @@ blockquote {
 
 .welc-text {
 	color: white;
-	font-size: 4rem;
+	font-size: 64px;
 	font-family: 'Dosis', sans-serif;
 	position: absolute;
 	vertical-align: middle;
@@ -106,22 +109,19 @@ blockquote {
  	background-attachment: fixed;
  	-ms-overflow-style: none;
  	text-align: center;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 .bg-filter {
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0,0,0,0.7);
 	height: 100vh;
-}
-
-.bg-filter-oh {
-	background-color: rgba(0,0,0,0.5);
-	padding: 0;
-	text-align: left;
-	color: #30e392;
 }
 
 .bg-filter-1 {
 	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
 
 }
 
@@ -182,16 +182,63 @@ blockquote {
 
 /* Small mobile */
 @media screen and (max-width: 360px) {
+	.card-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
 
-	html {
-		font-size: 10px;
+	.card-grid-x {
+		grid-template-columns: repeat(1, 1fr);
+		min-width: 80vw;
+	}
+
+	.card-x:before {
+		padding-bottom: 148px
+	}
+
+	.card-ct-x {
+		top: 0;
+		padding: 50px 25px;
+		position: absolute;
+		width: 100%
+	}
+
+	.cards {
+		max-width: 100vh;
+	}
+
+	.card-ct {
+		padding: 15px;
 	}
 
 	.card-time {
-		margin-top: 90%;
+		margin-top: 55%;
+		font-size: 55%;
 	}
-}
 
+	.footr {
+	  	font-size: 10px;
+	}
+
+	.hed {
+		font-size: 18px;
+		color: white;
+		text-align: center;
+	}
+
+	.dt {
+		display: none;
+	}
+
+	.welc p,i {
+		padding: 15px 13px;
+		font-size: 15px;
+	}
+
+	.welc i {
+		padding: 15px;
+	}
+
+}
 /* Desktop */
 @media screen and (min-width: 1024px) {
 	.card-grid {
@@ -208,8 +255,13 @@ blockquote {
 		font-size: 130%;
 	}
 
+	.card-ct {
+		padding: 25px;
+	}
+
 	.card-time {
-		margin-top: 70%
+		margin-top: 85%;
+		font-size: 13px;
 	}
 
 	.footr {
@@ -217,7 +269,7 @@ blockquote {
 	}
 
 	.med-txt {
-		font-size: 1.5rem;
+		font-size: 24px;
 	}
 
 	.dt {
@@ -226,7 +278,7 @@ blockquote {
 		justify-content: center;
 		text-align: center;
 		display: block;
-		font-size: 1.7rem;
+		font-size: 27.2px;
 		color: white;
 		font-family: 'Quicksand', sans-serif;
 		padding: 20px 25px 0 0;
@@ -248,7 +300,7 @@ blockquote {
 	}
 
 	.card:hover .card-bg {
-		transform: scale(1.01);
+		transform: scale(1.05);
 	}
 
 	.card-grid:hover > .card:not(:hover) .card-bg{
@@ -266,6 +318,16 @@ blockquote {
 
 	.card-grid:hover > .card:not(:hover) .card-time{
   		color: transparent;
+	}
+
+	.welc p,i {
+		padding: 25px 23px;
+		font-size: 15px;
+		color: white;
+	}
+
+	.welc i {
+		padding: 25px;
 	}
 
 }
@@ -292,12 +354,17 @@ blockquote {
 		width: 100%
 	}
 
+	.card-ct {
+		padding: 25px;
+	}
+
 	.cards {
 		max-width: 100vh;
 	}
 
 	.card-time {
-		margin-top: 75%;
+		margin-top: 65%;
+		font-size: 13px;
 	}
 
 	.footr {
@@ -305,15 +372,24 @@ blockquote {
 	}
 
 	.hed {
-		font-size: 1.5rem;
+		font-size: 24px;
 		color: white;
 		text-align: center;
-
 	}
 
 	.dt {
 		display: none;
 	}
+
+	.welc p,i {
+		padding: 15px 13px;
+		font-size: 15px;
+	}
+
+	.welc i {
+		padding: 15px;
+	}
+
 }
 
 /* Ipad/Tablet */
@@ -338,8 +414,13 @@ blockquote {
 		width: 100%
 	}
 
+	.card-ct {
+		padding: 25px;
+	}
+
 	.card-time {
-		margin-top: 70%;
+		margin-top: 85%;
+		font-size: 13px;
 	}
 
 	.card-grid {
@@ -351,13 +432,23 @@ blockquote {
 	}
 
 	.hed {
-		font-size: 1.5rem;
+		font-size: 24px;
 		color: white;
 		text-align: center;
 	}
 
 	.dt {
 		display: none;
+	}
+
+	.welc p,i {
+		padding: 25px 23px;
+		font-size: 15px;
+		color: white;
+	}
+
+	.welc i {
+		padding: 25px;
 	}
 }
 
@@ -387,37 +478,36 @@ blockquote {
   top: 0;
   filter: brightness(0.75);
   transition: 
-    filter 0.3s linear,
-    transform 0.3s linear;
+    filter 0.35s linear,
+    transform 0.35s linear;
 }
 
 .card-ct {
 	top: 0;
-	padding: 25px;
 	position: absolute;
 }
 
 .card-head {
 	color: white;
-	font-size: 1.3rem;
+	font-size: 20.8px;
 	word-spacing: 100vw;
 }
 
 .card-head-x {
 	color: white;
-	font-size: 1.3rem;
+	font-size: 20.8px;
 	display: inline;
 	vertical-align: middle;
 }
 .card-subhead {
 	color: #ededed;
-	font-size: 0.6rem;
+	font-size: 13px;
+	padding-top: 2px;
 
 }
 
 .card-time{
   	color: #ededed;
- 	font-size: 0.6rem;
 
 }
 
@@ -449,7 +539,7 @@ hr {
 }
 
 .nav {
-	 font-size: 1rem;
+	font-size: 16px;
  	text-align: center;
  	vertical-align: middle;
  	color: white;
@@ -471,18 +561,8 @@ hr {
 
 .so-text {
 	color: white;
-	font-size: 1rem;
+	font-size: 16px;
 	text-align: center;
-}
-
-.welc p,i {
-	padding: 25px;
-	font-size: 20px;
-	color: white;
-}
-
-.welc i {
-	padding: 25px;
 }
 
 .logo, .gright {
@@ -490,6 +570,7 @@ hr {
     display: inline;
     left: 0;
     font-family: 'Press Start 2P', cursive;
+    font-size: 24px;
 }
 
 .gright {
@@ -503,7 +584,7 @@ hr {
     left: 0;
     right:0;
     text-align: right;
-    font-size: 1.3rem;
+    font-size: 20.8px;
     top: 0;
     padding: 20px
 }
@@ -515,7 +596,7 @@ hr {
     bottom: 0;
     right:0;
     text-align: right;
-    font-size: 1.3rem;
+    font-size: 20.8px;
     padding: 20px;
 }
 
@@ -527,4 +608,8 @@ hr {
 	background-repeat: no-repeat;
  	background-attachment: fixed;
 
+}
+
+.fa-facebook {
+	font-size: 20px;
 }
