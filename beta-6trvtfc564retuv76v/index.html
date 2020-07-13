@@ -2,11 +2,10 @@
 <html>
 <head>
   <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <title>Konosuba Việt Nam</title>
-  <link rel="preload" as="style" href="css/fonts.css">
-  <link rel="preload" as="style" href="css/home.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/home.css">
+  <script src="js/dark.js"></script>
+  <title>Konosuba Việt Nam</title>
   <link rel="shortcut icon" type="image/png" href="favicon.png"/>
 </head>
 <body>
@@ -17,10 +16,61 @@
 <div class="welc-bg no-slc" id="home">
   <div class="bg-filter welc">
     <div class="logo"><p>KonosubaVN</p></div>
-    <div class="gright"><a target=”_blank” rel=”noopener noreferrer” href="https://www.facebook.com/groups/konosuba.vietnam/"><i class="fab fa-facebook-f"></i></a></div>
+    <div class="gright">
+      <a onclick="go_dark()"><i class="fas fa-moon"></i></a>
+      <a target=”_blank” rel=”noopener noreferrer” href="https://www.facebook.com/groups/konosuba.vietnam/"><i class="fab fa-facebook-f"></i></a>
+    </div>
     <h2 class="welc-text">Xin chào!</h2>
-    <a class="button-bg button" href="#cards">Khám phá</a>
+    <a class="button" href="#cards"><i class="far fa-angle-down"></i></a>
     <a class="btm" href="#abkn">Konosuba là gì ?</a>
+  </div>
+</div>
+
+<!-- Characters -->
+<div class="hed bg-1 no-slc" id="cards">
+  <h2>Nhân vật chính</h2>
+<div class="cards">
+  <div class="card-grid-rb">
+    <a class="card-r" onClick="alert('Đang hoàn thiện...')">
+      <div class="card-bg border-r" style="background-image: url(kazuma.jpg)"></div>
+      <div class="card-ct-rb">
+        <h3 class="card-head-rb color-kazuma">Kazuma</h3>
+
+      </div>
+    </a>
+
+    <a class="card-r" onClick="alert('Đang hoàn thiện...')">
+      <div class="card-bg border-r" style="background-image: url(aqua.jpg)"></div>
+      <div class="card-ct-rb">
+        <h3 class="card-head-rb color-aqua">Aqua</h3>
+
+      </div>
+    </a>
+
+    <a class="card-r" onClick="alert('Đang hoàn thiện...')">
+      <div class="card-bg border-r" style="background-image: url(megumin.jpg)"></div>
+      <div class="card-ct-rb">
+        <h3 class="card-head-rb color-megumin">Megumin</h3>
+      </div>
+    </a>
+
+    <a class="card-r" onClick="alert('Đang hoàn thiện...')">
+      <div class="card-bg border-r" style="background-image: url(darkness.jpg)"></div>
+      <div class="card-ct-rb">
+        <h3 class="card-head-rb color-darkness">Darkness</h3>
+      </div>
+    </a>
+
+  </div>
+</div>
+</div>
+
+<!-- About Konosuba -->
+<div class="bg-1" id="abkn">
+  <div class="hed about">
+    <h2>Cốt truyện</h2>
+      <p>Konosuba là câu truyện kể về nam sinh trung học <b class="color-kazuma">Satou Kazuma</b>, một NEET, Otaku chính hiệu. Trong một lần cố gắng ra ngoài để đi mua game mà mình thích, bạn trẻ này đã phải nhận một cái chết vô cùng tức tưởi, làm gia đình đến bác sĩ phải "bật khóc" vì cái chết thảm thương này. Sau khi tỉnh dậy, cậu thấy linh hồn mình đã được chuyển đến một nơi kỳ lạ, trước mặt cậu là một cô gái tự xưng là <b class="color-aqua">Aqua</b>, nữ thần có nhiệm vụ đưa những linh hồn của người Nhật Bản đến với cuộc sống mới. Cô cho <b class="color-kazuma">Kazuma</b> 2 lựa chọn: 1 là hồi sinh ở thiên đường, một nơi vô cùng nhàm chán, 2 là đến với thế giới nào đó, nơi mà cậu có thể tiếp tục với niềm đam mê như game của mình. Tất nhiên, vì là 1 NEET, cậu đã chọn số 2. Trước khi đến với thế giới đó, cậu được phép mang theo 1 món đồ đã được <b class="color-aqua">Aqua</b> soạn trước. Tuy rằng đều là những cái cheat bá đạo cho những người chuyển sinh, nhưng do thái độ ác cảm với vị nữ thần cứ cà khịa này và bởi cậu quá đen, <b class="color-kazuma">Kazuma</b> đã chọn phải món đồ mà có lẽ cậu sẽ phải hối hận suốt chuyến phiêu lưu của mình.</p>
+      <p>Tại thế giới đó, <b class="color-kazuma">Kazuma</b> đã có một khởi đầu không quá suôn sẻ như cậu nghĩ. Nhưng sau khoảng thời gian phải nói là khá khó khăn trong chuyến phiêu lưu, cậu cuối cùng cũng lập được một đội hình trông có vẻ khá ổn, nhưng đó mới là lúc mà những đau khổ của cậu bắt đầu...</p>
   </div>
 </div>
 
@@ -75,15 +125,6 @@
 </div>
 </div>
 
-<!-- About Konosuba -->
-<div class="about-bg-kn" id="abkn">
-  <div class="about color1">
-    <h2>Cốt truyện</h2>
-      <p>Konosuba là câu truyện kể về nam sinh trung học <b>Satou Kazuma</b>, một NEET, Otaku chính hiệu. Trong một lần cố gắng ra ngoài để đi mua game mà mình thích, bạn trẻ này đã phải nhận một cái chết vô cùng tức tưởi, làm gia đình đến bác sĩ phải "bật khóc" vì cái chết thảm thương này. Sau khi tỉnh dậy, cậu thấy linh hồn mình đã được chuyển đến một nơi kỳ lạ, trước mặt cậu là một cô gái tự xưng là <b>Aqua</b>, nữ thần có nhiệm vụ đưa những linh hồn của người Nhật Bản đến với cuộc sống mới. Cô cho <b>Kazuma</b> 2 lựa chọn : 1 là hồi sinh ở thiên đường, một nơi vô cùng nhàm chán. 2, đến với thế giới nào đó, nơi mà cậu có thể tiếp tục với niềm đam mê như game của mình. Tất nhiên, vì là 1 NEET, cậu đã chọn số 2 . Trước khi đến với thế giới đó, cậu được phép mang theo 1 món đồ đã được <b>Aqua</b> soạn trước. Tuy rằng đều là những cái cheat bá đạo cho những người chuyển sinh, nhưng do thái độ ác cảm với vị nữ thần cứ cà khịa này và bởi cậu quá đen, <b>Kazuma</b> đã chọn phải món đồ mà có lẽ cậu sẽ phải hối hận suốt chuyến phiêu lưu của mình.</p>
-      <p>Tại thế giới đó, <b>Kazuma</b> đã có một khởi đầu không quá suôn sẻ như cậu nghĩ. Nhưng sau khoảng thời gian phải nói là khá khó khăn trong chuyến phiêu lưu, cậu cuối cùng cũng lập được một đội hình trông có vẻ khá ổn, nhưng đó mới là lúc mà những đau khổ của cậu bắt đầu...</p>
-  </div>
-</div>
-
 <!--<div class="about-bg-kn-2" id="char">
   <div class="about color2">
     <h2>Nhân vật</h2>
@@ -100,46 +141,6 @@ Cô bé loli đệ nhất pháp sư của làng Hồng Ma Tộc (1 ngôi làng n
 Một quý tộc của dòng họ có địa vị cao nhất trong triều đình (chỉ sau hoàng tộc). Hành nghề Crusader- thập tự chinh. Cô là một cô gái vô cùng cứng cáp nhưng lại mắc bệnh M rất nặng</p>
   </div>
 </div> -->
-
-<div class="hed about-bg-kn-2 no-slc" id="cards">
-  <h2>Nhân vật chính</h2>
-<div class="cards">
-  <div class="card-grid-rb">
-    <a class="card-r" onClick="alert('Đang hoàn thiện...')">
-      <div class="card-bg border-r" style="background-image: url(kazuma.jpg)"></div>
-      <div class="card-ct-rb">
-        <h3 class="card-head-rb color-kazuma">Satou Kazuma</h3>
-        <p class="card-subhead-color2">1 NEET, OTAKU chính hiệu!</p>
-      </div>
-    </a>
-
-    <a class="card-r" onClick="alert('Đang hoàn thiện...')">
-      <div class="card-bg border-r" style="background-image: url(aqua.jpg)"></div>
-      <div class="card-ct-rb">
-        <h3 class="card-head-rb color-aqua">Aqua</h3>
-        <p class="card-subhead-color2">Nữ thần vô dụng-sama!</p>
-      </div>
-    </a>
-
-    <a class="card-r" onClick="alert('Đang hoàn thiện...')">
-      <div class="card-bg border-r" style="background-image: url(megumin.jpg)"></div>
-      <div class="card-ct-rb">
-        <h3 class="card-head-rb color-megumin">Megumin</h3>
-        <p class="card-subhead-color2">Explosionnnnnnnn!!!!</p>
-      </div>
-    </a>
-
-    <a class="card-r" onClick="alert('Đang hoàn thiện...')">
-      <div class="card-bg border-r" style="background-image: url(darkness.jpg)"></div>
-      <div class="card-ct-rb">
-        <h3 class="card-head-rb color-darkness">Darkness</h3>
-        <p class="card-subhead-color2">Khodamcucmanh</p>
-      </div>
-    </a>
-
-  </div>
-</div>
-</div>
 
 <!-- About
 <div class="about-bg no-slc" id="about">
