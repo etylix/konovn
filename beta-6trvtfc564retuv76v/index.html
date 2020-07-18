@@ -4,7 +4,7 @@
   <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/home.css">
-  <script src="js/dark.js"></script>
+  <script src="js/bg.js"></script>
   <title>Konosuba Việt Nam</title>
   <link rel="shortcut icon" type="image/png" href="favicon.png"/>
 </head>
@@ -15,24 +15,23 @@
 <!-- Welcome -->
 <div class="welc-bg no-slc" id="home">
   <div class="bg-filter welc">
-    <div class="logo"><p>KonosubaVN</p></div>
+    <div class="logo"><p class="welc">KonosubaVN</p></div>
     <div class="gright">
-      <a onclick="go_dark()"><i class="fas fa-moon"></i></a>
-      <a target=”_blank” rel=”noopener noreferrer” href="https://www.facebook.com/groups/konosuba.vietnam/"><i class="fab fa-facebook-f"></i></a>
+      <a target=”_blank” rel=”noopener noreferrer” href="https://www.facebook.com/groups/konosuba.vietnam/"><i class="fab fa-facebook-f welc"></i></a>
     </div>
     <h2 class="welc-text">Xin chào!</h2>
-    <a class="button" href="#cards"><i class="far fa-angle-down"></i></a>
-    <a class="btm" href="#abkn">Konosuba là gì ?</a>
+    <a class="btm" href="#abkn">Cuộn xuống</a>
+    <i class=" button fas fa-angle-double-down"></i>
   </div>
 </div>
-
+<script src="js/bg.js"></script>
 <!-- Characters -->
 <div class="hed bg-1 no-slc" id="cards">
-  <h2>Nhân vật chính</h2>
+  <h2 class="hed">Nhân vật chính</h2>
 <div class="cards">
   <div class="card-grid-rb">
     <a class="card-r" onClick="alert('Đang hoàn thiện...')">
-      <div class="card-bg border-r" style="background-image: url(kazuma.jpg)"></div>
+      <div class="card-bg border-r" style="background-image: url(images/char/kazuma.jpg)"></div>
       <div class="card-ct-rb">
         <h3 class="card-head-rb color-kazuma">Kazuma</h3>
 
@@ -40,7 +39,7 @@
     </a>
 
     <a class="card-r" onClick="alert('Đang hoàn thiện...')">
-      <div class="card-bg border-r" style="background-image: url(aqua.jpg)"></div>
+      <div class="card-bg border-r" style="background-image: url(images/char/aqua.jpg)"></div>
       <div class="card-ct-rb">
         <h3 class="card-head-rb color-aqua">Aqua</h3>
 
@@ -48,14 +47,14 @@
     </a>
 
     <a class="card-r" onClick="alert('Đang hoàn thiện...')">
-      <div class="card-bg border-r" style="background-image: url(megumin.jpg)"></div>
+      <div class="card-bg border-r" style="background-image: url(images/char/megumin.jpg)"></div>
       <div class="card-ct-rb">
         <h3 class="card-head-rb color-megumin">Megumin</h3>
       </div>
     </a>
 
     <a class="card-r" onClick="alert('Đang hoàn thiện...')">
-      <div class="card-bg border-r" style="background-image: url(darkness.jpg)"></div>
+      <div class="card-bg border-r" style="background-image: url(images/char/darkness.jpg)"></div>
       <div class="card-ct-rb">
         <h3 class="card-head-rb color-darkness">Darkness</h3>
       </div>
@@ -68,7 +67,7 @@
 <!-- About Konosuba -->
 <div class="bg-1" id="abkn">
   <div class="hed about">
-    <h2>Cốt truyện</h2>
+    <h2 class="hed">Cốt truyện</h2>
       <p>Konosuba là câu truyện kể về nam sinh trung học <b class="color-kazuma">Satou Kazuma</b>, một NEET, Otaku chính hiệu. Trong một lần cố gắng ra ngoài để đi mua game mà mình thích, bạn trẻ này đã phải nhận một cái chết vô cùng tức tưởi, làm gia đình đến bác sĩ phải "bật khóc" vì cái chết thảm thương này. Sau khi tỉnh dậy, cậu thấy linh hồn mình đã được chuyển đến một nơi kỳ lạ, trước mặt cậu là một cô gái tự xưng là <b class="color-aqua">Aqua</b>, nữ thần có nhiệm vụ đưa những linh hồn của người Nhật Bản đến với cuộc sống mới. Cô cho <b class="color-kazuma">Kazuma</b> 2 lựa chọn: 1 là hồi sinh ở thiên đường, một nơi vô cùng nhàm chán, 2 là đến với thế giới nào đó, nơi mà cậu có thể tiếp tục với niềm đam mê như game của mình. Tất nhiên, vì là 1 NEET, cậu đã chọn số 2. Trước khi đến với thế giới đó, cậu được phép mang theo 1 món đồ đã được <b class="color-aqua">Aqua</b> soạn trước. Tuy rằng đều là những cái cheat bá đạo cho những người chuyển sinh, nhưng do thái độ ác cảm với vị nữ thần cứ cà khịa này và bởi cậu quá đen, <b class="color-kazuma">Kazuma</b> đã chọn phải món đồ mà có lẽ cậu sẽ phải hối hận suốt chuyến phiêu lưu của mình.</p>
       <p>Tại thế giới đó, <b class="color-kazuma">Kazuma</b> đã có một khởi đầu không quá suôn sẻ như cậu nghĩ. Nhưng sau khoảng thời gian phải nói là khá khó khăn trong chuyến phiêu lưu, cậu cuối cùng cũng lập được một đội hình trông có vẻ khá ổn, nhưng đó mới là lúc mà những đau khổ của cậu bắt đầu...</p>
   </div>
@@ -76,38 +75,35 @@
 
 <!-- Cards -->
 <div class="hed bg-1 no-slc" id="cards">
-  <h2>Chỉ mục</h2>
+  <h2 class="hed">Chỉ mục</h2>
 <div class="cards">
   <div class="card-grid">
     <a class="card" href="ln">
-      <div class="card-bg border-x" style="background-image: url(1.jpg)"></div>
+      <div class="card-bg border-x" style="background-image: url(images/ln/eng.png)"></div>
       <div class="card-ct">
         <h3 class="card-head">Phần truyện chính</h3>
         <p class="card-subhead">Light Novel</p>
-        <p class="card-time">Volume 17 -  End</p>
       </div>
     </a>
 
     <a class="card" href="spinoff">
-      <div class="card-bg border-x" style="background-image: url(2.jpg)"></div>
+      <div class="card-bg border-x" style="background-image: url(images/so/ex.png)"></div>
       <div class="card-ct">
         <h3 class="card-head">Phần ngoại truyện</h3>
         <p class="card-subhead">Spin-off</p>
-        <p class="card-time">Đang cập nhật</p>
       </div>
     </a>
 
     <a href="f" class="card">
-      <div class="card-bg border-x" style="background-image: url(3.jpg)"></div>
+      <div class="card-bg border-x" style="background-image: url(images/card/manga.jpg)"></div>
       <div class="card-ct">
         <h3 class="card-head">Truyện của fan</h3>
         <p class="card-subhead">Fanfic</p>
-        <p class="card-time">Chap 4</p>
       </div>
     </a>
 
     <a class="card" onClick="alert('Đang hoàn thiện...')">
-      <div class="card-bg border-x" style="background-image: url(5.jpg)"></div>
+      <div class="card-bg border-x" style="background-image: url(images/card/manga.jpg)"></div>
       <div class="card-ct">
         <h3 class="card-head">Phần truyện tranh</h3>
         <p class="card-subhead">Manga</p>
@@ -115,9 +111,17 @@
     </a>
 
     <a class="card" href="anime">
-      <div class="card-bg border-x" style="background-image: url(6.jpg)"></div>
+      <div class="card-bg border-x" style="background-image: url(css/anibg.jpg)"></div>
       <div class="card-ct">
-        <h3 class="card-head">Anime</h3>
+        <h3 class="card-head">Phần anime</h3>
+      </div>
+    </a>
+
+        <a class="card" href="audio">
+      <div class="card-bg border-x" style="background-image: url(images/card/audio.jpg)"></div>
+      <div class="card-ct">
+        <h3 class="card-head">Nhạc</h3>
+        <p class="card-subhead">Audio/Music</p>
       </div>
     </a>
 

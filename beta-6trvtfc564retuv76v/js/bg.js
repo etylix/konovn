@@ -1,0 +1,10 @@
+  var imgCount = 5;
+        var dir = 'images/bg/';
+        var randomCount = Math.round(Math.random() * (imgCount - 1)) + 1;
+        var images = new Array
+                images[1] = "slider_01.jpg",
+                images[2] = "slider_02.jpg",
+                images[3] = "slider_03.jpg",
+                images[4] = "slider_04.jpg",
+                images[5] = "slider_05.jpg",
+        document.getElementById("home").style.backgroundImage = "url(" + dir + images[randomCount] + ")"; 
