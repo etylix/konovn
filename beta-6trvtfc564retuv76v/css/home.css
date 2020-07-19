@@ -151,7 +151,6 @@ h2, h3 {
 }
 
 .cards {
-	height: 80vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -174,6 +173,9 @@ h2, h3 {
 	grid-column-gap: 25px;
 	grid-row-gap: 25px;
 	text-align: left;
+	grid-template-columns: repeat(5, 1fr);
+	min-width: 90vw;
+
 }
 
 .card-grid-a {
@@ -219,7 +221,9 @@ h2, h3 {
 }
 
 /* Small mobile */
-@media screen and (max-width: 361px) {
+@media screen 
+	and (min-width: 320px)
+	and (max-width: 450px) {
 	.card-grid {
 		grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
 		grid-auto-flow: column;
@@ -227,16 +231,12 @@ h2, h3 {
 		overflow-x: auto;
 	}
 
-	.card-grid-a {
+	.card-grid-a, .card-grid-rb {
 		grid-template-columns: repeat(2, 1fr);
 	}
 
 	.card-grid-b {
-		grid-template-columns: repeat(1);
-	}
-
-	.card-grid-rb {
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(1, 1fr);
 	}
 
 	.cards, .cards-b {
@@ -287,9 +287,13 @@ h2, h3 {
 		padding-top: 5px;
 	}
 
+	.small-mb {
+		font-size: 14px;
+	}
+
 }
 
-/* Freaking small phones */
+/* Freaking small phones 
 @media screen and (max-width: 320px) {
 	.card-head {
 		font-size: 15px;
@@ -298,10 +302,18 @@ h2, h3 {
 	.card-grid-a {
 		grid-template-columns: repeat(2, 1fr);
 	}
+
+	.card-grid-b {
+		grid-template-columns: repeat(1, 1fr);
+		font-size: 13px;
+	}
 }
 
 /* Mobiles */
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen 
+	and (min-width: 375px) 
+	and (max-width: 767px) {
+
 	.card-grid {
 		grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
 		grid-auto-flow: column;
@@ -314,7 +326,7 @@ h2, h3 {
 	 }
 
 	.card-grid-b {
-		grid-template-columns: repeat(1);
+		grid-template-columns: repeat(1, 1fr);
 	}
 
 	.card-grid-rb {
@@ -362,8 +374,28 @@ h2, h3 {
 
 }
 
+/* Mobiles landscape */
+@media only screen
+  and (min-device-width : 640px)
+  and (orientation:landscape)
+  and (max-device-width: 850px) {
+
+  	.card-grid-rb {
+  		grid-template-columns: repeat(4, 1fr);
+  	}
+
+  	.card-grid-b {
+  		grid-template-columns: repeat(2, 1fr);
+  	}
+
+  	.card-head-b {
+  		font-size: 15px;
+  	}
+}
+
 /* Desktop */
-@media screen and (min-width: 1024px) {
+@media screen 
+	and (min-width: 1366px) {
 	.card-grid {
 		grid-template-columns: repeat(5, 1fr);
 		min-width: 90vw;
@@ -435,22 +467,80 @@ h2, h3 {
 
 }
 
-/* Ipad/Tablet portrait */
+/* Big af Ipad portrait	 */	
 @media only screen
-  and (min-device-width : 768px)
+  and (min-device-width : 800px)
   and (orientation:portrait)
-  and (max-device-width: 1023px) 
-{	
+  and (max-device-width: 1024px) {
 
 	.card-grid-rb {
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(4, 1fr);
 	}
 
 	.card-ct, .card-ct-b {
 		padding: 25px;
 	}
 
-	.card-grid, .card-grid-b {
+	.card-head {
+		font-size: 40px;
+	}
+
+	.card-subhead {
+		font-size: 25px;
+	}
+
+	.card-grid {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.footr {
+	  	font-size: 12px;
+	}
+
+	.hed {
+		font-size: 24px;
+		text-align: center;
+	}
+
+	p.welc ,i.welc {
+		padding: 25px 23px;
+		font-size: 25px;
+		color: #fff;
+	}
+
+	.nav-social {
+		padding: 25px;
+	}
+
+	.about p {
+		font-size: 29px;
+		padding: 5px 30px;
+	}
+
+	.card-head-rb {
+		padding-top: 5px;
+	}
+}
+
+/* Ipad/Tablet portrait */
+@media only screen
+  and (min-device-width : 768px)
+  and (orientation:portrait)
+  and (max-device-width: 1024px) {	
+
+	.card-grid-rb {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.card-ct, .card-ct-b {
+		padding: 25px;
+	}
+
+	.card-grid {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.card-grid-b {
 		grid-template-columns: repeat(2, 1fr);
 	}
 
@@ -492,26 +582,26 @@ h2, h3 {
 	}
 }
 
-/* Ipad pru portrait	 */	
-@media only screen and (min-device-width : 1024px) and (orientation:portrait) {
+/* Ipad/Tablet landscape */
+@media only screen
+  and (min-device-width : 768px)
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 1.5)
+{	
 
 	.card-grid-rb {
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(4, 1fr);
 	}
 
 	.card-ct, .card-ct-b {
 		padding: 25px;
 	}
 
-	.card-head {
-		font-size: 40px;
-	}
-
-	.card-subhead {
-		font-size: 25px;
-	}
-
 	.card-grid, .card-grid-b {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.card-grid-b {
 		grid-template-columns: repeat(3, 1fr);
 	}
 
@@ -520,13 +610,13 @@ h2, h3 {
 	}
 
 	.hed {
-		font-size: 24px;
+		font-size: 30px;
 		text-align: center;
 	}
 
-	p.welc ,i.welc {
+	p.welc, i.welc {
 		padding: 25px 23px;
-		font-size: 25px;
+		font-size: 15px;
 		color: #fff;
 	}
 
@@ -539,11 +629,14 @@ h2, h3 {
 		padding: 5px 30px;
 	}
 
+	.card-head-b {
+		font-size: 16px
+	}
+
 	.card-head-rb {
 		padding-top: 5px;
 	}
 }
-
 
 .card, .card-r {
 	position: relative;
