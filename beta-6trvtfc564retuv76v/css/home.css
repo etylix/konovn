@@ -410,7 +410,7 @@ h2, h3 {
 		font-size: 130%;
 	}
 
-	h2.hed {
+	.hed {
 		font-size: 30px;
 	}
 
@@ -759,7 +759,7 @@ hr {
 	border: 0;
 	border-bottom: solid 1px;
 	margin: 0 3.5rem;
-	border-bottom-color: rgba(255, 255, 255, 0.2);
+	border-bottom-color: rgba(0, 0, 0, 0.35);
 }
 
 .nav {
@@ -776,8 +776,9 @@ hr {
 
 .footr {
   	text-align: center;
-  	color: #fff;
+  	color: #4d4d4d;
   	font-family: 'Nunito', sans-serif;
+  	font-weight: 800;
 }
 
 .so-bg {
