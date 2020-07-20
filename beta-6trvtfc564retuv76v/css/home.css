@@ -471,7 +471,7 @@ h2, h3 {
 @media only screen
   and (min-device-width : 834px)
   and (orientation:portrait)
-  and (max-device-width: 1112px)
+  and (max-device-width: 834px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
 	.card-grid-rb {
@@ -523,11 +523,11 @@ h2, h3 {
 	}
 }
 
-/* Ipad/Tablet portrait */
+/* Ipad mini/air + tablet portrait */
 @media only screen
   and (min-device-width: 768px)
   and (orientation: portrait)
-  and (max-device-width: 1024px)
+  and (max-device-width: 768px)
   and (-webkit-min-device-pixel-ratio: 1) {
 
 	.card-grid-rb {
@@ -588,7 +588,7 @@ h2, h3 {
 @media only screen
   and (min-device-width : 768px)
   and (max-device-width: 1366px)
-  and (-webkit-min-device-pixel-ratio: 1.5)
+  and (-webkit-min-device-pixel-ratio: 1)
 {	
 
 	.card-grid-rb {
