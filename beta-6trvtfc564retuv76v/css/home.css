@@ -469,9 +469,9 @@ p.welc ,i.welc {
 
 /* Mobiles landscape */
 @media only screen
-  and (min-device-width : 640px)
+  and (min-width : 640px)
   and (orientation:landscape)
-  and (max-device-width: 850px) {
+  and (max-width: 850px) {
 
   	.card-grid-rb {
   		grid-template-columns: repeat(4, 1fr);
@@ -494,8 +494,8 @@ p.welc ,i.welc {
 
 /* Desktop */
 @media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) {
+  and (min-width: 1200px) 
+  and (max-width: 1600px) {
 	.card-grid {
 		grid-template-columns: repeat(5, 1fr);
 		min-width: 90vw;
@@ -575,10 +575,10 @@ p.welc ,i.welc {
 
 /* Big af Ipad portrait	 */	
 @media only screen
-  and (min-device-width : 834px)
+  and (min-width : 834px)
   and (orientation:portrait)
-  and (max-device-width: 834px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (max-width: 834px)
+  and (-webkit-min-pixel-ratio: 2) {
 
 	.card-grid-rb {
 		grid-template-columns: repeat(4, 1fr);
@@ -637,10 +637,10 @@ p.welc ,i.welc {
 
 /* Ipad mini/air + tablet portrait */
 @media only screen
-  and (min-device-width: 768px)
+  and (min-width: 768px)
   and (orientation: portrait)
-  and (max-device-width: 768px)
-  and (-webkit-min-device-pixel-ratio: 1) {
+  and (max-width: 768px)
+  and (-webkit-min-pixel-ratio: 1) {
 
 	.card-grid-rb {
 		grid-template-columns: repeat(4, 1fr);
@@ -704,9 +704,9 @@ p.welc ,i.welc {
 
 /* Ipad/Tablet landscape */
 @media only screen
-  and (min-device-width : 768px)
-  and (max-device-width: 1112px)
-  and (-webkit-min-device-pixel-ratio: 1)
+  and (min-width : 768px)
+  and (max-width: 1112px)
+  and (-webkit-min-pixel-ratio: 1)
 {	
 
 	.card-grid-rb {
