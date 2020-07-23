@@ -31,7 +31,7 @@ h1.title {
 
 p.status { 
 	border-radius: 0 10px 10px 0;
-	background-color: rgba(255,0,0,0.5);
+	border: 1px solid #36d696;
 }
 
 .f-grid {

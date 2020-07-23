@@ -180,6 +180,45 @@ p.welc ,i.welc {
 	min-width: 90vw;
 }
 
+.nehh {
+	display: flex;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	background-color: rgba(0,0,0,0.4);
+	border-radius: 10px;
+	padding-bottom: 50%;
+}
+
+.wtitle {
+	position: absolute;
+}
+
+p.status, h1.title {
+	display: inline-block;
+	padding: 10px;
+	color: #fff;
+}
+
+h1.title {
+	font-size: 15px;
+}
+
+p.status { 
+	border-radius: 0 10px 10px 0;
+	border: 1px solid #36d696;
+}
+
+.f-grid {
+	display: grid;
+	max-width: 100vw;
+	grid-column-gap: 25px;
+	grid-row-gap: 25px;
+	text-align: left;
+	padding: 10px;
+	grid-template-columns: repeat(4, 1fr);
+}
+
 .card-grid-a {
 	grid-template-columns: repeat(3, 1fr);
 	padding: 20px;
@@ -638,8 +677,7 @@ p.welc ,i.welc {
 @media only screen
   and (min-width: 768px)
   and (orientation: portrait)
-  and (max-width: 768px)
-  and (-webkit-min-pixel-ratio: 1) {
+  and (max-width: 768px) {
 
 	.card-grid-rb {
 		grid-template-columns: repeat(4, 1fr);
@@ -973,6 +1011,7 @@ button[type=submit] {
 	outline: none;
 	transition: background-color 1s;
 	margin: 10px;
+	background-color: #36d696;
 	border-radius: 20px;
 }
 
@@ -982,8 +1021,10 @@ input[type=text], button[type=submit] {
 }
 
 button[type=submit]:hover {
-	background-color: #36d696;
+	background-color: #fff;
+	border: 1px solid #36d696;
 }
+
 
 .fa-facebook-f, .fa-moon {
 	font-size: 20px;
