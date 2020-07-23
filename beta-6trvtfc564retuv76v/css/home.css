@@ -245,6 +245,37 @@ p.status {
 	width: 30%;
 }
 
+input[type=text] {
+  	width: 35%;
+  	padding: 12px 20px;
+  	margin: 8px 0;
+  	box-sizing: border-box;
+	outline: none;
+	margin: auto;
+	display: block;
+	border: 1px solid #36d696;
+	border-radius: 20px;
+}
+
+button[type=submit] {
+	padding: 10px 30px;
+	outline: none;
+	transition: background-color 1s;
+	margin: 10px;
+	background-color: #36d696;
+	border-radius: 20px;
+}
+
+input[type=text], button[type=submit] {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 600;
+}
+
+button[type=submit]:hover {
+	background-color: #fff;
+	border: 1px solid #36d696;
+}
+
 /* Commons  */
 @media screen and (min-width: 321px) {
 	.card-head {
@@ -347,6 +378,10 @@ p.status {
 		font-size: 80%;
 	}
 
+	input[type=text] {
+		width: 70%
+	}
+
 }
 
 /* Freaking small phones */
@@ -433,6 +468,10 @@ p.status {
 		font-size: 70%;
 	}
 
+	input[type=text] {
+		width: 70%
+	}
+
 }
 
 /* Mobiles */
@@ -501,6 +540,10 @@ p.status {
 	.modal-img {
 		width: 65%;
 		height: 65%;
+	}
+
+	input[type=text] {
+		width: 70%
 	}
 
 }
@@ -992,37 +1035,6 @@ hr.popup {
   	-o-background-size: cover;
   	background-size: cover;
   	background-position: center center;
-}
-
-input[type=text] {
-  	width: 35%;
-  	padding: 12px 20px;
-  	margin: 8px 0;
-  	box-sizing: border-box;
-	outline: none;
-	margin: auto;
-	display: block;
-	border: 1px solid #36d696;
-	border-radius: 20px;
-}
-
-button[type=submit] {
-	padding: 10px 30px;
-	outline: none;
-	transition: background-color 1s;
-	margin: 10px;
-	background-color: #36d696;
-	border-radius: 20px;
-}
-
-input[type=text], button[type=submit] {
-	font-family: 'Quicksand', sans-serif;
-	font-weight: 600;
-}
-
-button[type=submit]:hover {
-	background-color: #fff;
-	border: 1px solid #36d696;
 }
 
 
