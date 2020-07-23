@@ -178,7 +178,6 @@ p.welc ,i.welc {
 	text-align: left;
 	grid-template-columns: repeat(4, 1fr);
 	min-width: 90vw;
-
 }
 
 .card-grid-a {
@@ -244,7 +243,7 @@ p.welc ,i.welc {
 		grid-template-columns: repeat(2, 1fr);
 	}
 
-	.card-grid-b {
+	.card-grid-b, .f-grid {
 		grid-template-columns: repeat(1, 1fr);
 	}
 
@@ -413,7 +412,7 @@ p.welc ,i.welc {
 	 	grid-template-columns: repeat(2, 1fr);
 	 }
 
-	.card-grid-b {
+	.card-grid-b, .f-grid {
 		grid-template-columns: repeat(1, 1fr);
 	}
 
@@ -477,7 +476,7 @@ p.welc ,i.welc {
   		grid-template-columns: repeat(4, 1fr);
   	}
 
-  	.card-grid-b {
+  	.card-grid-b, .f-grid {
   		grid-template-columns: repeat(2, 1fr);
   	}
 
@@ -501,7 +500,7 @@ p.welc ,i.welc {
 		min-width: 90vw;
 	}
 
-	.card-grid-b, .card-grid-rb {
+	.card-grid-b, .f-grid, .card-grid-rb {
 		grid-template-columns: repeat(4, 1fr);
 		min-width: 90vw;
 	}
@@ -654,7 +653,7 @@ p.welc ,i.welc {
 		grid-template-columns: repeat(4, 1fr);
 	}
 
-	.card-grid-b {
+	.card-grid-b, .f-grid {
 		grid-template-columns: repeat(2, 1fr);
 	}
 
@@ -717,7 +716,7 @@ p.welc ,i.welc {
 		padding: 25px;
 	}
 
-	.card-grid, .card-grid-b {
+	.card-grid, .card-grid-b, .f-grid {
 		grid-template-columns: repeat(4, 1fr);
 	}
 
@@ -955,6 +954,35 @@ hr.popup {
   	-o-background-size: cover;
   	background-size: cover;
   	background-position: center center;
+}
+
+input[type=text] {
+  	width: 35%;
+  	padding: 12px 20px;
+  	margin: 8px 0;
+  	box-sizing: border-box;
+	outline: none;
+	margin: auto;
+	display: block;
+	border: 1px solid #36d696;
+	border-radius: 20px;
+}
+
+button[type=submit] {
+	padding: 10px 30px;
+	outline: none;
+	transition: background-color 1s;
+	margin: 10px;
+	border-radius: 20px;
+}
+
+input[type=text], button[type=submit] {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 600;
+}
+
+button[type=submit]:hover {
+	background-color: #36d696;
 }
 
 .fa-facebook-f, .fa-moon {

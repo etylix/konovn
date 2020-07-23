@@ -1,0 +1,45 @@
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	text-align: center;
+}
+
+.nehh {
+	display: flex;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	background-color: rgba(0,0,0,0.4);
+	border-radius: 10px;
+	padding-bottom: 50%;
+}
+
+.wtitle {
+	position: absolute;
+}
+
+p.status, h1.title {
+	display: inline-block;
+	padding: 10px;
+	color: #fff;
+}
+
+h1.title {
+	font-size: 15px;
+}
+
+p.status { 
+	border-radius: 0 10px 10px 0;
+	background-color: rgba(255,0,0,0.5);
+}
+
+.f-grid {
+	display: grid;
+	max-width: 100vw;
+	grid-column-gap: 25px;
+	grid-row-gap: 25px;
+	text-align: left;
+	padding: 10px;
+	grid-template-columns: repeat(4, 1fr);
+}
