@@ -380,7 +380,7 @@ button[type=submit]:hover {
 		font-size: 80%;
 	}
 
-	input[type=text] {
+	textarea[type=text] {
 		width: 70%
 	}
 
@@ -470,7 +470,7 @@ button[type=submit]:hover {
 		font-size: 70%;
 	}
 
-	input[type=text] {
+	textarea[type=text] {
 		width: 70%
 	}
 
@@ -544,7 +544,7 @@ button[type=submit]:hover {
 		height: 65%;
 	}
 
-	input[type=text] {
+	textarea[type=text] {
 		width: 70%
 	}
 
