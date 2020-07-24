@@ -1029,17 +1029,6 @@ hr.popup {
 	color: #fff;
 }
 
-.anibg {
-	background-image: url(anibg.jpg);
-	min-height: 100vh;
-	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-  	background-position: center center;
-}
-
-
 .fa-facebook-f, .fa-moon {
 	font-size: 20px;
 }
