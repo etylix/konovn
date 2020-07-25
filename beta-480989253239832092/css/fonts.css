@@ -1,9 +1,2 @@
-@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
-@import url("https://use.fontawesome.com/releases/v5.13.1/css/all.css");
-
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url("all.min.css");
+@import url(https://fonts.googleapis.com/css2?family=Dosis:wght@400&family=Quicksand&family=Nunito:wght@200&Playfair+Display&Montserrat:ital,wght@1,300&family=Press+Start+2P&family=Comfortaa&display=swap)

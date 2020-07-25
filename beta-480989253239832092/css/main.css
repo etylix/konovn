@@ -8,6 +8,13 @@
 html {
 	scroll-behavior: smooth;
 	-webkit-tap-highlight-color: transparent;
+	background-image: 
+		url("../images/bg/bg_1.webp");
+		url("../images/bg/bg_2.webp1");
+		url("../images/bg/bg_3.webp");
+		url("../images/bg/bg_4.webp");
+		url("../images/bg/bg_5.webp");
+		background-size: 0 0;
 }
 
 body {
@@ -637,7 +644,7 @@ input[type=submit]:hover {
 		padding: 25px;
 	}
 	.about p {
-		font-size: 25px;
+		font-size: 20px;
 		padding: 5px 30px;
 	}
 
