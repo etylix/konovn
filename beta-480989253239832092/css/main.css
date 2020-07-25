@@ -75,6 +75,13 @@ h2, h3 {
 	font-family: 'Comfortaa', cursive;
 }
 
+img.game {
+	max-width: 20vw;
+	height: auto;
+	padding: 15px;
+	border-radius: 25px;
+}
+
 .hed {
 	font-size: 20.2px;
 	text-align: center;
@@ -310,7 +317,7 @@ input[type=submit]:hover {
 /* Small mobile */
 @media screen 
 	and (min-width: 320px)
-	and (max-width: 450px) {
+	and (max-width: 374px) {
 
 	.card-grid {
 		grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
@@ -390,6 +397,10 @@ input[type=submit]:hover {
 
 	textarea[type=text] {
 		width: 70%
+	}
+
+	img.game {
+	max-width: 80vw;
 	}
 
 }
@@ -482,6 +493,10 @@ input[type=submit]:hover {
 		width: 70%
 	}
 
+	img.game {
+	max-width: 80vw;
+	}
+
 }
 
 /* Mobiles */
@@ -556,6 +571,10 @@ input[type=submit]:hover {
 		width: 70%
 	}
 
+	img.game {
+	max-width: 80vw;
+	}
+
 }
 
 /* Mobiles landscape */
@@ -579,6 +598,10 @@ input[type=submit]:hover {
 	.modal-img {
 		width: 65%;
 		height: 65%;
+	}
+
+	img.game {
+	max-width: 50vw;
 	}
 
 }
@@ -662,6 +685,10 @@ input[type=submit]:hover {
 		height: 35%;
 	}
 
+	img.game {
+	max-width: 20vw;
+	}
+
 }
 
 /* Big af Ipad portrait	 */	
@@ -722,6 +749,10 @@ input[type=submit]:hover {
 	.modal-img {
 		width: 35%;
 		height: 35%;
+	}
+
+	img.game {
+	max-width: 60vw;
 	}
 
 }
@@ -790,13 +821,16 @@ input[type=submit]:hover {
 		height: 35%;
 	}
 
+	img.game {
+	max-width: 80vw;
+	}
+
 }
 
 /* Ipad/Tablet landscape */
 @media only screen
   and (min-width : 768px)
   and (max-width: 1112px)
-  and (-webkit-min-pixel-ratio: 1)
 {	
 
 	.card-grid-rb {
@@ -850,6 +884,10 @@ input[type=submit]:hover {
 	.modal-img {
 		width: 35%;
 		height: 35%;
+	}
+
+	img.game {
+	max-width: 60vw;
 	}
 
 }
