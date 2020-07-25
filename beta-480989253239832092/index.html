@@ -2,12 +2,12 @@
 <html>
 <head>
   <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="shortcut icon" type="image/webp" href="images/favicon.webp"/>
+  <link rel="preload" href="js/bg.js" as="script">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/home.css">
   <link rel="stylesheet" href="css/popup.css">
-  <script src="js/bg.js"></script>
   <title>Konosuba Việt Nam</title>
-  <link rel="shortcut icon" type="image/webp" href="favicon.webp"/>
 </head>
 <body>
 
@@ -133,11 +133,11 @@
 <div class="bg-1" id="confession" style="text-align: center;">
 <h2 class="hed" style="margin-bottom: 30px;">Confession</h2>
 <script type="text/javascript">var submitted=false;</script>
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='#confesssubmited';}"></iframe>
-<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeYE2bmXQAj0oAdkAB-orjU1JHUzVr1py3RcnD5STwA4Raebg/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
-  <textarea type="text" name="entry.589695512" autocomplete="off" placeholder="Nhập confess bạn muốn gửi"></textarea>
-  <button type="submit">Gửi</button>
-  <p style="padding-bottom: 15px; color: #a6a6a6">(Confession sẽ được đăng và trả lời tại page Here We Have Quality Konosuba Post.)</p>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){document.querySelector('#submit-button').value = 'Đã gửi!';}"></iframe>
+<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScRUMd0PzdiikaFwX9p6XVqBR1REleN3Igq-gMPpClKqNhKxg/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+  <textarea type="text" name="entry.1428481625" autocomplete="off" placeholder="Nhập confess bạn muốn gửi"></textarea>
+  <input id="submit-button" type="submit" value="Gửi"></input>
+  <p style="padding-bottom: 15px; color: #7d7d7d">(Confession sẽ được đăng và trả lời tại page Here We Have Quality Konosuba Post.)</p>
 </form>
 </div>
 
@@ -170,16 +170,10 @@ Một quý tộc của dòng họ có địa vị cao nhất trong triều đìn
   </div>
 </div> -->
 
-<hr>
 <!-- Footer -->
 <section class="footr no-slc">
-  <p style="color: #9c9c9c;"><a target=”_blank” rel=”noopener noreferrer” href="https://www.facebook.com/etylix/" style="color: #9c9c9c;">etylix@</a>KonoVN project</p>
+  <p style="color: #dbdbdb;"><a target=”_blank” rel=”noopener noreferrer” href="https://www.facebook.com/etylix/" style="color: #dbdbdb;">Etylix@</a>KonoVN project</p>
 </section>
-
-<!-- Footer -->
-<section class="footr">
-  <p>Made by <a target=”_blank” rel=”noopener noreferrer” href="https://www.facebook.com/etploxion/">@etylix</a> with <i class="far fa-heart eth"></i></p>
-</section>  
 
  <!-- Modal -->
 <div id="aqua" class="modal">
@@ -188,7 +182,7 @@ Một quý tộc của dòng họ có địa vị cao nhất trong triều đìn
     <h2 class="color-aqua">Aqua</h2>
     <p><b>Ngày sinh:</b> 1 tháng tám</p>    
     <hr class="popup">   
-    <p>Nữ thần vô dụng-sama, là cái tên mà Kazuma gọi cô trong những ngày đầu tiên ở thế giới. Hành nghề Archpriest – linh mục cấp cao. Tất cả các chỉ số đều rất cao, ngoại trừ may mắn và … trí tuệ . Hiển nhiên với điều đó, cô đã có những màn bóp team vô cùng đẳng cấp.</p>
+    <p>Nữ thần vô dụng-sama, là cái tên mà Kazuma gọi cô trong những ngày đầu tiên ở thế giới. Hành nghề Archpriest – linh mục cấp cao. Tất cả các chỉ số đều rất cao, ngoại trừ may mắn và … trí tuệ. Hiển nhiên với điều đó, cô đã có những màn bóp team vô cùng đẳng cấp.</p>
 </div>
 <a class="close-modal"></a>
 
@@ -219,12 +213,6 @@ Một quý tộc của dòng họ có địa vị cao nhất trong triều đìn
     <p><b>Ngày sinh:</b> 6 tháng tư</p>    
     <hr class="popup">   
     <p>Một quý tộc của dòng họ có địa vị cao nhất trong triều đình (chỉ sau hoàng tộc). Hành nghề Crusader- thập tự chinh. Cô là một cô gái vô cùng cứng cáp nhưng lại mắc bệnh M rất nặng</p>
-</div>
-<a class="close-modal"></a>
-
-<div id="confesssubmited" class="modal">
-   <a href="#kazuminforever"><i class="close fas fa-times"></i></a>
-    <h2>Đã gửi confess!</h2>
 </div>
 <a class="close-modal"></a>
 
