@@ -23,7 +23,7 @@
 <section class="cards">
   <div class="card-grid-a">
 
-    <a class="card" href="#s1">
+    <a class="card" onclick="s1();mdbg()">
       <div class="card-bg border-x" style="background-image: url(images/anime/s1.webp)"></div>
       <div class="card-ct">
         <h3 class="card-head">S1</h3>
@@ -49,7 +49,7 @@
 </div>
 
 <div id="s1" class="modal">
-   <a href="#kazuminforever"><i class="close fas fa-times"></i></a>
+   <a onclick="closeModal()"><i class="close fas fa-times"></i></a>
     <h2>Chọn website</h2>
     <a href="https://vuighe.net">Vuighe.net</a>
 </div>
@@ -60,5 +60,6 @@
   <p style="color: #dbdbdb;"><a target=”_blank” rel=”noopener noreferrer” href="https://www.facebook.com/etylix/" style="color: #dbdbdb;">Etylix@</a>KonoVN project</p>
 </section>
 
+  <script src="js/popup.js"></script>
 </body>
 </html>

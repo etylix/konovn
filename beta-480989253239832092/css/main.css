@@ -19,6 +19,7 @@ html {
 
 body {
 	min-height: 100vh;
+	height: 100%;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 15px; 
 	background-position: center;
@@ -41,22 +42,18 @@ a, i {
 }
 
 a {
-	color: #c2c2c2;
+	color: #3d3d3d;
   	text-decoration: none;
 	font-family: 'Quicksand', sans-serif;
 }
 
-a:hover {
+a:hover, i:hover {
 	color: #31c48c;
 	background-color: transparent;
 }
 
 i {
 	color: #fff;
-}
-
-i:hover {
-	color: #31c48c;
 }
 
 sup {
@@ -73,6 +70,17 @@ blockquote {
 h2, h3 {
 	font-weight: 700;
 	font-family: 'Comfortaa', cursive;
+}
+
+h5, h6 {
+	padding: 15px;
+}
+
+h6.game {
+	background-color: #d6d6d6;
+	border-radius: 10px;
+	text-align: left;
+	margin: 10px auto;
 }
 
 img.game {
@@ -689,6 +697,10 @@ input[type=submit]:hover {
 	max-width: 20vw;
 	}
 
+	h6.game {
+		max-width: 40vw;
+	}
+
 }
 
 /* Big af Ipad portrait	 */	
@@ -1038,12 +1050,17 @@ hr.popup {
 
 .eth {color: #f04654}
 
-.footr {
+footer, .footr {
   	text-align: center;
   	color: #4d4d4d;
   	font-family: 'Nunito', sans-serif;
   	font-weight: 800;
   	font-size: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100vw;
+    height: 50px;
+
 }
 
 .so-bg {
@@ -1072,6 +1089,11 @@ hr.popup {
 
 .gright a {
 	color: #fff;
+}
+
+.content {
+	display: none;
+	padding: 10px;
 }
 
 .fa-facebook-f, .fa-moon {

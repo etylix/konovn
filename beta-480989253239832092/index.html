@@ -10,7 +10,6 @@
   <link rel="preload" href="images/anime/movie.webp" as="image" type="image/webp">
   <link rel="preload" href="images/card/audio.webp" as="image" type="image/webp">
   <link rel="preload" href="css/main.css" as="style">
-  <link rel="preload" href="js/bg.js" as="script">
 
   <meta property="og:url" content="https://konovn.space" />
   <meta property="og:type" content="article" />
@@ -25,8 +24,6 @@
   <title>Konosuba Việt Nam</title>
 </head>
 <body>
-
-
 
 <!-- Welcome -->
 <div class="welc-bg no-slc" id="home">
@@ -46,15 +43,14 @@
   <h2 class="hed">Nhân vật chính</h2>
 <div class="cards">
   <div class="card-grid-rb">
-    <a class="card-r" href="#kazuma">
+    <a class="card-r" onclick="dkazuma();mdbg()">
       <div class="card-bg border-r" style="background-image: url(images/char/kazuma.webp)"></div>
       <div class="card-ct-rb">
         <h3 class="card-head-rb color-kazuma">Kazuma</h3>
-
       </div>
     </a>
 
-    <a class="card-r" href="#aqua">
+    <a class="card-r" onclick="daqua();mdbg()">
       <div class="card-bg border-r" style="background-image: url(images/char/aqua.webp)"></div>
       <div class="card-ct-rb">
         <h3 class="card-head-rb color-aqua">Aqua</h3>
@@ -62,14 +58,14 @@
       </div>
     </a>
 
-    <a class="card-r" href="#megumin">
+    <a class="card-r" onclick="dmegumin();mdbg()">
       <div class="card-bg border-r" style="background-image: url(images/char/megumin.webp)"></div>
       <div class="card-ct-rb">
         <h3 class="card-head-rb color-megumin">Megumin</h3>
       </div>
     </a>
 
-    <a class="card-r" href="#darkness">
+    <a class="card-r" onclick="ddarkness();mdbg()">
       <div class="card-bg border-r" style="background-image: url(images/char/darkness.webp)"></div>
       <div class="card-ct-rb">
         <h3 class="card-head-rb color-darkness">Darkness</h3>
@@ -196,20 +192,10 @@ Một quý tộc của dòng họ có địa vị cao nhất trong triều đìn
 <section class="footr no-slc">
   <p style="color: #dbdbdb;"><a target=”_blank” rel=”noopener noreferrer” href="https://www.facebook.com/etylix/" style="color: #dbdbdb;">Etylix@</a>KonoVN project</p>
 </section>
-
+<div class="modalwrapper">
  <!-- Modal -->
-<div id="aqua" class="modal">
-   <a href="#kazuminforever"><i class="close fas fa-times"></i></a>
-    <img class="modal-img" src="images/char/aqua.webp">
-    <h2 class="color-aqua">Aqua</h2>
-    <p><b>Ngày sinh:</b> 1 tháng tám</p>    
-    <hr class="popup">   
-    <p>Nữ thần vô dụng-sama, là cái tên mà Kazuma gọi cô trong những ngày đầu tiên ở thế giới. Hành nghề Archpriest – linh mục cấp cao. Tất cả các chỉ số đều rất cao, ngoại trừ may mắn và … trí tuệ. Hiển nhiên với điều đó, cô đã có những màn bóp team vô cùng đẳng cấp.</p>
-</div>
-<a class="close-modal"></a>
-
-<div id="kazuma" class="modal">
-   <a href="#kazuminforever"><i class="close fas fa-times"></i></a>
+ <div id="kazuma" class="modal">
+   <a onclick="closeModal()"><i class="close fas fa-times"></i></a>
     <img class="modal-img" src="images/char/kazuma.webp">
     <h2 class="color-kazuma">Kazuma</h2>
     <p><b>Ngày sinh:</b> 7 tháng sáu</p>    
@@ -218,8 +204,18 @@ Một quý tộc của dòng họ có địa vị cao nhất trong triều đìn
 </div>
 <a class="close-modal"></a>
 
+<div id="aqua" class="modal">
+   <a onclick="closeModal()"><i class="close fas fa-times"></i></a>
+    <img class="modal-img" src="images/char/aqua.webp">
+    <h2 class="color-aqua">Aqua</h2>
+    <p><b>Ngày sinh:</b> 1 tháng tám</p>    
+    <hr class="popup">   
+    <p>Nữ thần vô dụng-sama, là cái tên mà Kazuma gọi cô trong những ngày đầu tiên ở thế giới. Hành nghề Archpriest – linh mục cấp cao. Tất cả các chỉ số đều rất cao, ngoại trừ may mắn và … trí tuệ. Hiển nhiên với điều đó, cô đã có những màn bóp team vô cùng đẳng cấp.</p>
+</div>
+<a class="close-modal"></a>
+
 <div id="megumin" class="modal">
-   <a href="#kazuminforever"><i class="close fas fa-times"></i></a>
+   <a onclick="closeModal()"><i class="close fas fa-times"></i></a>
     <img class="modal-img" src="images/char/megumin.webp">
     <h2 class="color-megumin">Megumin</h2>
     <p><b>Ngày sinh:</b> 4 tháng mười hai</p>    
@@ -229,7 +225,7 @@ Một quý tộc của dòng họ có địa vị cao nhất trong triều đìn
 <a class="close-modal"></a>
 
 <div id="darkness" class="modal">
-   <a href="#kazuminforever"><i class="close fas fa-times"></i></a>
+   <a onclick="closeModal()"><i class="close fas fa-times"></i></a>
     <img class="modal-img" src="images/char/darkness.webp">
     <h2 class="color-darkness">Darkness</h2>
     <p><b>Ngày sinh:</b> 6 tháng tư</p>    
@@ -237,6 +233,7 @@ Một quý tộc của dòng họ có địa vị cao nhất trong triều đìn
     <p>Một quý tộc của dòng họ có địa vị cao nhất trong triều đình (chỉ sau hoàng tộc). Hành nghề Crusader- thập tự chinh. Cô là một cô gái vô cùng cứng cáp nhưng lại mắc bệnh M rất nặng</p>
 </div>
 <a class="close-modal"></a>
-
+</div>
+<script src="js/popup.js"></script>
 </body>
 </html>
