@@ -33,14 +33,14 @@
       <a href="https://www.facebook.com/groups/konosuba.vietnam/"><i class="fab fa-facebook-f welc"></i></a>
     </div>
     <h2 class="welc-text">Xin chào!</h2>
-    <a class="btm">Cuộn xuống nào !</a>
-    <i class="button fas fa-angle-double-down"></i>
+    <span class="btm">Cuộn xuống nào !</span>
+    <i class="button fas fa-chevron-down"></i>
   </div>
 </div>
 <script src="js/bg.js"></script>
 <!-- Characters -->
 <div class="hed bg-1 no-slc" id="cards">
-  <h2 class="hed">Nhân vật chính</h2>
+  <h2 class="hed hed-title">Nhân vật chính</h2>
 <div class="cards">
   <div class="card-grid-rb">
     <a class="card-r" onclick="dkazuma();mdbg()">
@@ -79,7 +79,7 @@
 <!-- About Konosuba -->
 <div class="bg-1" id="abkn">
   <div class="hed about">
-    <h2 class="hed">Cốt truyện</h2>
+    <h2 class="hed hed-title">Cốt truyện</h2>
       <p><b>Konosuba</b> là câu truyện kể về nam sinh trung học <b class="color-kazuma">Satou Kazuma</b>, một NEET, Otaku chính hiệu. Trong một lần cố gắng ra ngoài để đi mua game mà mình thích, bạn trẻ này đã phải nhận một cái chết vô cùng tức tưởi, làm gia đình đến bác sĩ phải "bật khóc" vì cái chết thảm thương này. Sau khi tỉnh dậy, cậu thấy linh hồn mình đã được chuyển đến một nơi kỳ lạ, trước mặt cậu là một cô gái tự xưng là <b class="color-aqua">Aqua</b>, nữ thần có nhiệm vụ đưa những linh hồn của người Nhật Bản đến với cuộc sống mới. Cô cho <b class="color-kazuma">Kazuma</b> 2 lựa chọn: 1 là hồi sinh ở thiên đường, một nơi vô cùng nhàm chán, 2 là đến với thế giới nào đó, nơi mà cậu có thể tiếp tục với niềm đam mê như game của mình. Tất nhiên, vì là 1 NEET, cậu đã chọn số 2. Trước khi đến với thế giới đó, cậu được phép mang theo 1 món đồ đã được <b class="color-aqua">Aqua</b> soạn trước. Tuy rằng đều là những cái cheat bá đạo cho những người chuyển sinh, nhưng do thái độ ác cảm với vị nữ thần cứ cà khịa này và bởi cậu quá đen, <b class="color-kazuma">Kazuma</b> đã chọn phải món đồ mà có lẽ cậu sẽ phải hối hận suốt chuyến phiêu lưu của mình.</p>
       <p>Tại thế giới đó, <b class="color-kazuma">Kazuma</b> đã có một khởi đầu không quá suôn sẻ như cậu nghĩ. Nhưng sau khoảng thời gian phải nói là khá khó khăn trong chuyến phiêu lưu, cậu cuối cùng cũng lập được một đội hình trông có vẻ khá ổn, nhưng đó mới là lúc mà những đau khổ của cậu bắt đầu...</p>
   </div>
@@ -87,7 +87,7 @@
 
 <!-- Cards -->
 <div class="hed bg-1 no-slc" id="cards">
-  <h2 class="hed">Chỉ mục</h2>
+  <h2 class="hed hed-title">Chỉ mục</h2>
 <div class="cards">
   <div class="card-grid">
     <a class="card" href="ln">
@@ -148,14 +148,23 @@
 </div>
 </div>
 
-<div class="bg-1" id="confession" style="text-align: center;">
-<h2 class="hed" style="margin-bottom: 30px;">Confession</h2>
+<div class="hed bg-1 no-slc" id="confession" style="text-align: center;">
+<h2 class="hed hed-title">Confession</h2>
 <script type="text/javascript">var submitted=false;</script>
 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){document.querySelector('#submit-button').value = 'Đã gửi!';}"></iframe>
 <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScRUMd0PzdiikaFwX9p6XVqBR1REleN3Igq-gMPpClKqNhKxg/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
-  <textarea type="text" name="entry.1428481625" autocomplete="off" placeholder="Nhập confess bạn muốn gửi"></textarea>
+  <textarea type="text" id="submit-text" name="entry.1428481625" autocomplete="off" placeholder="Nhập confess bạn muốn gửi"></textarea>
   <input id="submit-button" type="submit" value="Gửi"></input>
-  <p style="padding-bottom: 15px; color: #7d7d7d">(Confession sẽ được đăng và trả lời tại page <a href="https://www.facebook.com/AquaSamaIsNotUseless">Here we have quality Konosuba posts</a>.)</p>
+  <input id="clear-button" type="button" value="Xóa"></input>
+  <script type="text/javascript">
+  var input = document.querySelector('#clear-button');
+var textarea = document.querySelector('#submit-text');
+
+input.addEventListener('click', function () {
+    textarea.value = '';
+}, false);
+  </script>
+  <p style="padding-bottom: 15px; color: #7d7d7d; font-size: 70%;">(Confession sẽ được đăng và trả lời tại page <a href="https://www.facebook.com/AquaSamaIsNotUseless">Here we have quality Konosuba posts</a>.)</p>
 </form>
 </div>
 

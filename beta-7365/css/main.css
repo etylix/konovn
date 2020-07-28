@@ -26,6 +26,7 @@ body {
 	background-repeat: no-repeat;
  	background-attachment: fixed;
  	-ms-overflow-style: none;
+ 	-webkit-font-smoothing: subpixel-antialiased;
  	background-color: #fff;
  	color: #000;
  	transition: background 1s;
@@ -47,7 +48,7 @@ a {
 	font-family: 'Quicksand', sans-serif;
 }
 
-a:hover, i:hover {
+a:hover {
 	color: #7FFFD4;
 	background-color: transparent;
 }
@@ -93,10 +94,16 @@ img.game {
 .hed {
 	font-size: 20.2px;
 	text-align: center;
+	margin: 10px;
 }
 
-.hed h2 {
-	padding: 25px;
+.hed-title {
+	border-radius: 200px;
+	color: #fff;
+	width: 70vw;
+	margin: 20px auto;
+	background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+	padding: 10px;
 }
 
 /* background by SVGBackgrounds.com */
@@ -175,7 +182,7 @@ p.welc ,i.welc {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 0 25px 25px;
+	padding: 0 25px;
 }
 
 .cards-b {
@@ -190,7 +197,6 @@ p.welc ,i.welc {
 .card-grid, .card-grid-b, .card-grid-a {
 	display: grid;
 	max-width: 1280px;
-	width: 100%;
 	grid-column-gap: 25px;
 	grid-row-gap: 25px;
 	text-align: left;
@@ -239,11 +245,6 @@ p.status {
 	grid-template-columns: repeat(4, 1fr);
 }
 
-.card-grid-a {
-	grid-template-columns: repeat(3, 1fr);
-	padding: 20px;
-}
-
 .card-grid-rb {
 	display: grid;
 	max-width: 1280px;
@@ -279,17 +280,25 @@ textarea[type=text] {
 }
 
 input[type=submit] {
-	padding: 10px 30px;
-	outline: none;
-	transition: background-color 0.7s;
-	margin: 10px;
 	background-color: #7FFFD4;
 	border-radius: 20px;
 	border: 1.5px solid transparent;
-
 }
 
-textarea[type=text], input[type=submit] {
+input[type=button] {
+	background-color: #fff;
+	border-radius: 20px;
+	border: 1.5px solid #7FFFD4
+}
+
+input[type=submit], input[type=button] {
+	padding: 10px 30px;
+	margin: 10px;
+	outline: none;
+	transition: background-color 0.7s;
+}
+
+textarea[type=text], input[type=submit], input[type=button] {
 	font-family: 'Quicksand', sans-serif;
 	font-weight: 600;
 }
@@ -297,6 +306,10 @@ textarea[type=text], input[type=submit] {
 input[type=submit]:hover {
 	background-color: #fff;
 	border: 1.5px solid #7FFFD4;
+}
+
+input[type=button]:hover {
+	background-color: rgba(127, 255, 212, 0.5);
 }
 
 /* Commons  */
@@ -631,15 +644,19 @@ input[type=submit]:hover {
 /* Desktop */
 @media screen 
   and (min-width: 1200px) 
-  and (max-width: 1600px) {
+  and (max-width: 2560px) {
 	.card-grid {
 		grid-template-columns: repeat(5, 1fr);
 		min-width: 90vw;
 	}
 
-	.card-grid-b, .f-grid, .card-grid-rb {
+	.card-grid-b, .card-grid-a, .f-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.card-grid-rb {
 		grid-template-columns: repeat(4, 1fr);
-		min-width: 90vw;
+		grid-gap: 120px;
 	}
 
 	html {
@@ -648,6 +665,10 @@ input[type=submit]:hover {
 
 	.hed {
 		font-size: 30px;
+	}
+
+	.hed-title {
+		width: 25vw;
 	}
 
 	.card-ct, .card-ct-b {
@@ -721,8 +742,7 @@ input[type=submit]:hover {
 @media only screen
   and (min-width : 834px)
   and (orientation:portrait)
-  and (max-width: 834px)
-  and (-webkit-min-pixel-ratio: 2) {
+  and (max-width: 1024px) {
 
 	.card-grid-rb {
 		grid-template-columns: repeat(4, 1fr);
@@ -751,6 +771,10 @@ input[type=submit]:hover {
 	.hed {
 		font-size: 24px;
 		text-align: center;
+	}
+
+	.hed-title {
+		width: 25vw;
 	}
 
 	p.welc ,i.welc {
@@ -818,6 +842,10 @@ input[type=submit]:hover {
 		text-align: center;
 	}
 
+	.hed-title {
+		width: 25vw;
+	}
+
 	.dt {
 		display: none;
 		padding-top: 10px;
@@ -861,6 +889,7 @@ input[type=submit]:hover {
 @media only screen
   and (min-width : 768px)
   and (max-width: 1112px)
+  and (orientation: landscape);
 {	
 
 	.card-grid-rb {
@@ -886,6 +915,10 @@ input[type=submit]:hover {
 	.hed {
 		font-size: 30px;
 		text-align: center;
+	}
+
+	.hed-title {
+		width: 25vw;
 	}
 
 	p.welc, i.welc {
