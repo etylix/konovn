@@ -461,6 +461,10 @@ input[type=button]:hover {
 		grid-template-columns: repeat(1, 1fr);
 	}
 
+	.card-grid-a {
+		grid-gap: 25px;
+	}
+
 	.cards, .cards-b {
 		max-width: 100vw;
 	}
