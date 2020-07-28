@@ -241,6 +241,10 @@ h1.title {
 	font-size: 15px;
 }
 
+.fdesc {
+	color: #fff;
+}
+
 p.status { 
 	border-radius: 20px;
 	border: 1px solid #36d696;
@@ -412,6 +416,10 @@ input[type=button]:hover {
   font-weight:lighter;
 }
 
+.cardsbottom {
+	padding-bottom: 20px;
+}
+
 /* Commons  */
 @media screen and (min-width: 321px) {
 	.card-head {
@@ -447,7 +455,6 @@ input[type=button]:hover {
 
 	.card-grid-a, .card-grid-rb {
 		grid-template-columns: repeat(2, 1fr);
-		grid-gap: 25px;
 	}
 
 	.card-grid-b, .f-grid {
@@ -849,8 +856,8 @@ input[type=button]:hover {
 
 /* Big af Ipad portrait	 */	
 @media only screen 
-  and (min-width: 1024px) 
-  and (max-height: 1366px) 
+  and (min-width: 834px) 
+  and (max-width: 1024px) 
   and (orientation: portrait) 
   and (-webkit-min-device-pixel-ratio: 1.5) {
 
@@ -863,18 +870,18 @@ input[type=button]:hover {
 	}
 
 	.card-head {
-		font-size: 40px;
+		font-size: 30px;
 	}
 
 	.card-subhead {
-		font-size: 25px;
+		font-size: 20px;
 	}
 
 	.card-grid {
 		grid-template-columns: repeat(4, 1fr);
 	}
 
-	.card-grid-b {
+	.card-grid-b, .f-grid {
 		grid-template-columns: repeat(3, 1fr);
 	}
 
@@ -921,6 +928,10 @@ input[type=button]:hover {
 
 	h6.game {
 		max-width: 60vw;
+	}
+
+	h1.title {
+		font-size: 10px;
 	}
 
 }
@@ -1072,8 +1083,8 @@ input[type=button]:hover {
 
 /* iPad pro landscape */
 @media only screen 
-  and (min-width: 1112) 
-  and (max-height: 1366px) 
+  and (min-width: 1112px) 
+  and (max-width: 1366px) 
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 1.5) {
 
@@ -1090,7 +1101,7 @@ input[type=button]:hover {
 	}
 
 	.card-grid-b {
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 	}
 
 	.footr {
@@ -1121,6 +1132,14 @@ input[type=button]:hover {
 		padding: 5px 30px;
 	}
 
+	.card-head {
+		font-size: 30px;
+	}
+
+	.card-subhead {
+		font-size: 20px;
+	}
+
 	.card-head-b {
 		font-size: 16px
 	}
@@ -1140,6 +1159,14 @@ input[type=button]:hover {
 
 	h6.game {
 		max-width: 50vw;
+	}
+
+	h1.title {
+		font-size: 13px;
+	}
+
+	.fdesc {
+		font-size: 13px;
 	}
 }
 
