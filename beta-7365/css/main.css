@@ -1012,6 +1012,7 @@ input[type=submit]:hover {
 	color: #ededed;
 	padding-top: 2px;
 	font-size: 13px;
+  font-weight:lighter;
 }
 
 .card-subhead-color2 {
