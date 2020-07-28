@@ -194,7 +194,7 @@ p.welc ,i.welc {
 	min-height: 85vh;
 }
 
-.card-grid, .card-grid-b, .card-grid-a {
+.card-grid, .card-grid-b {
 	display: grid;
 	max-width: 1280px;
 	grid-column-gap: 25px;
@@ -202,6 +202,17 @@ p.welc ,i.welc {
 	text-align: left;
 	grid-template-columns: repeat(4, 1fr);
 	min-width: 90vw;
+	margin: auto;
+}
+
+.card-grid-a {
+	display: grid;
+	max-width: 1280px;
+	grid-column-gap: 120px;
+	grid-row-gap: 120px;
+	text-align: left;
+	grid-template-columns: repeat(3, 1fr);
+	width: 70vw;
 	margin: auto;
 }
 
@@ -312,6 +323,95 @@ input[type=button]:hover {
 	background-color: rgba(127, 255, 212, 0.5);
 }
 
+.card, .card-r {
+	position: relative;
+}
+
+.card:before {
+  	content: '';
+  	display: block;
+  	padding-bottom: 135%;
+}
+
+.card-r:before {
+	content: '';
+  	display: block;
+  	padding-bottom: 100%;
+}
+
+.card-bg {
+  	background-size: cover;
+  	background-position: center;
+  	bottom: 0;
+  	left: 0;
+  	position: absolute;
+  	right: 0;
+  	top: 0;
+  	filter: brightness(0.8);
+  	transition: 
+    	filter 0.35s linear,
+    	transform 0.35s linear;
+}
+
+.card-bg-b {
+  	background-size: cover;
+  	background-position: center;
+  	bottom: 0;
+  	left: 0;
+  	position: absolute;
+  	right: 0;
+  	top: 0;
+}
+
+.card-bg-b:after {
+	position: absolute;
+    content:"";
+    height:  100%;
+    width:100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0),rgba(0,0,0)); /* W3C */
+    border-radius: 7px;
+}
+
+.card-ct {
+	top: 0;
+	position: absolute;
+}
+
+.card-ct-b {
+	bottom: 0;
+	position: absolute;
+	font-size: 10px;
+	color: #fff;
+	align-items: center;
+	text-align: left;
+}
+
+.card-ct-rb {
+	position: absolute;
+	align-items: center;
+	font-size: 15px;
+	width: 100%;
+}
+
+.card-ct, .card-ct-b {
+	padding: 15px;
+}
+
+.card-head {
+	color: #fff;
+	word-spacing: 100vw;
+	font-size: 20px;
+}
+
+.card-subhead {
+	color: #ededed;
+	padding-top: 2px;
+	font-size: 13px;
+  font-weight:lighter;
+}
+
 /* Commons  */
 @media screen and (min-width: 321px) {
 	.card-head {
@@ -335,7 +435,7 @@ input[type=button]:hover {
 
 /* Small mobile */
 @media screen 
-	and (min-width: 320px)
+	and (min-width: 360px)
 	and (max-width: 374px) {
 
 	.card-grid {
@@ -347,6 +447,7 @@ input[type=button]:hover {
 
 	.card-grid-a, .card-grid-rb {
 		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 25px;
 	}
 
 	.card-grid-b, .f-grid {
@@ -395,10 +496,11 @@ input[type=button]:hover {
 
 	.card-head-b {
 		font-size: 17px;
+		display: inline;
 	}
 
 	.card-head-rb {
-		padding-top: 5px;
+		font-size: 20px;
 	}
 
 	.small-mb {
@@ -441,6 +543,7 @@ input[type=button]:hover {
 
 	.card-grid-a, .card-grid-rb {
 		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 25px
 	}
 
 	.card-grid-b {
@@ -493,6 +596,7 @@ input[type=button]:hover {
 
 	.card-head-b {
 		font-size: 17px;
+		display: inline;
 	}
 
 	.card-head-rb {
@@ -540,6 +644,7 @@ input[type=button]:hover {
 
 	 .card-grid-a {
 	 	grid-template-columns: repeat(2, 1fr);
+	 	grid-gap: 25px;
 	 }
 
 	.card-grid-b, .f-grid {
@@ -650,8 +755,12 @@ input[type=button]:hover {
 		min-width: 90vw;
 	}
 
-	.card-grid-b, .card-grid-a, .f-grid {
+	.card-grid-a, .f-grid {
 		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.card-grid-b {
+		grid-template-columns: repeat(4, 1fr);
 	}
 
 	.card-grid-rb {
@@ -739,10 +848,11 @@ input[type=button]:hover {
 }
 
 /* Big af Ipad portrait	 */	
-@media only screen
-  and (min-width : 834px)
-  and (orientation:portrait)
-  and (max-width: 1024px) {
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
 
 	.card-grid-rb {
 		grid-template-columns: repeat(4, 1fr);
@@ -762,6 +872,10 @@ input[type=button]:hover {
 
 	.card-grid {
 		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.card-grid-b {
+		grid-template-columns: repeat(3, 1fr);
 	}
 
 	.footr {
@@ -812,10 +926,10 @@ input[type=button]:hover {
 }
 
 /* Ipad mini/air + tablet portrait */
-@media only screen
-  and (min-width: 768px)
-  and (orientation: portrait)
-  and (max-width: 768px) {
+@media all
+	and (device-width: 768px) 
+	and (device-height: 1024px) 
+	and (orientation:portrait) {
 
 	.card-grid-rb {
 		grid-template-columns: repeat(4, 1fr);
@@ -829,8 +943,12 @@ input[type=button]:hover {
 		grid-template-columns: repeat(3, 1fr);
 	}
 
-	.card-grid-b, .f-grid {
+	.card-grid-a, .card-grid-b, .f-grid {
 		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.card-grid-a {
+		grid-gap: 50px;
 	}
 
 	.footr {
@@ -843,12 +961,7 @@ input[type=button]:hover {
 	}
 
 	.hed-title {
-		width: 25vw;
-	}
-
-	.dt {
-		display: none;
-		padding-top: 10px;
+		width: 30vw;
 	}
 
 	p.welc ,i.welc {
@@ -867,7 +980,7 @@ input[type=button]:hover {
 	}
 
 	.card-head-b {
-		font-size: 22px
+		font-size: 20px
 	}
 
 	.card-head-rb {
@@ -884,13 +997,12 @@ input[type=button]:hover {
 	}
 
 }
-
+	
 /* Ipad/Tablet landscape */
-@media only screen
-  and (min-width : 768px)
-  and (max-width: 1112px)
-  and (orientation: landscape);
-{	
+@media all
+ 	and (device-width: 1024px)
+  	and (device-height: 768px)
+	and (orientation:landscape) {	
 
 	.card-grid-rb {
 		grid-template-columns: repeat(4, 1fr);
@@ -900,12 +1012,85 @@ input[type=button]:hover {
 		padding: 25px;
 	}
 
-	.card-grid, .card-grid-b, .f-grid {
+	.card-grid, .f-grid {
 		grid-template-columns: repeat(4, 1fr);
 	}
 
 	.card-grid-b {
 		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.footr {
+	  	font-size: 12px;
+	}
+
+	.hed {
+		font-size: 30px;
+		text-align: center;
+	}
+
+	.hed-title {
+		width: 25vw;
+	}
+
+	p.welc, i.welc {
+		padding: 25px 23px;
+		font-size: 15px;
+		color: #fff;
+	}
+
+	.nav-social {
+		padding: 25px;
+	}
+
+	.about p {
+		font-size: 29px;
+		padding: 5px 30px;
+	}
+
+	.card-head-b {
+		font-size: 13px;
+	}
+
+	.card-head-rb {
+		padding-top: 5px;
+	}
+
+	.modal-img {
+		width: 35%;
+		height: 35%;
+	}
+
+	img.game {
+		max-width: 60vw;
+	}
+
+	h6.game {
+		max-width: 50vw;
+	}
+}
+
+/* iPad pro landscape */
+@media only screen 
+  and (min-width: 1112) 
+  and (max-height: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+
+  	.card-grid-rb {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.card-ct, .card-ct-b {
+		padding: 25px;
+	}
+
+	.card-grid, .f-grid {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.card-grid-b {
+		grid-template-columns: repeat(4, 1fr);
 	}
 
 	.footr {
@@ -956,96 +1141,6 @@ input[type=button]:hover {
 	h6.game {
 		max-width: 50vw;
 	}
-
-}
-
-.card, .card-r {
-	position: relative;
-}
-
-.card:before {
-  	content: '';
-  	display: block;
-  	padding-bottom: 135%;
-}
-
-.card-r:before {
-	content: '';
-  	display: block;
-  	padding-bottom: 100%;
-}
-
-.card-bg {
-  	background-size: cover;
-  	background-position: center;
-  	bottom: 0;
-  	left: 0;
-  	position: absolute;
-  	right: 0;
-  	top: 0;
-  	filter: brightness(0.8);
-  	transition: 
-    	filter 0.35s linear,
-    	transform 0.35s linear;
-}
-
-.card-bg-b {
-  	background-size: cover;
-  	background-position: center;
-  	bottom: 0;
-  	left: 0;
-  	position: absolute;
-  	right: 0;
-  	top: 0;
-}
-
-.card-bg-b:after {
-	position: absolute;
-    content:"";
-    height:  100%;
-    width:100%;
-    top: 0;
-    left: 0;
-    background: linear-gradient(to bottom, rgba(0,0,0,0),rgba(0,0,0)); /* W3C */
-    border-radius: 7px;
-}
-
-.card-ct {
-	top: 0;
-	position: absolute;
-}
-
-.card-ct-b {
-	bottom: 0;
-	position: absolute;
-	font-size: 10px;
-	color: #fff;
-	align-items: center;
-	text-align: center;
-}
-
-.card-ct-rb {
-	position: absolute;
-	align-items: center;
-	font-size: 15px;
-	width: 100%;
-}
-
-.card-ct, .card-ct-b {
-	padding: 15px;
-}
-
-.card-head {
-	color: #fff;
-	word-spacing: 100vw;
-	font-size: 20px;
-}
-
-.card-subhead {
-	color: #ededed;
-	padding-top: 2px;
-	font-size: 13px;
-  font-weight:lighter;
 }
 
 .card-subhead-color2 {
