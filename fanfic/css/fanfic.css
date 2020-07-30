@@ -5,14 +5,12 @@ body {
 	text-align: center;
 }
 
-.nehh {
-	display: flex;
-	width: 100%;
-	margin: auto;
-	text-align: center;
-	background-color: rgba(0,0,0,0.4);
-	border-radius: 10px;
-	padding-bottom: 50%;
+.logo, .gright {
+	color: #fff;
+    margin: auto;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+    text-align: center;
 }
 
 .wtitle {

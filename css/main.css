@@ -219,15 +219,17 @@ p.welc ,i.welc {
 .nehh {
 	display: flex;
 	width: 100%;
+	min-height: 70px;
 	margin: auto;
 	text-align: center;
 	background-color: rgba(0,0,0,0.4);
 	border-radius: 10px;
-	padding-bottom: 50%;
+
 }
 
 .wtitle {
 	position: absolute;
+	width: 100%;
 }
 
 p.status, h1.title {
@@ -235,14 +237,16 @@ p.status, h1.title {
 	padding: 10px;
 	color: #fff;
 	margin: 5px;
+	margin: auto;
 }
 
-h1.title {
+h1 {
 	font-size: 15px;
 }
 
 .fdesc {
 	color: #fff;
+	margin: auto;
 }
 
 p.status { 
@@ -258,6 +262,8 @@ p.status {
 	text-align: left;
 	padding: 10px;
 	grid-template-columns: repeat(4, 1fr);
+	min-height: 80vh;
+	margin: auto;
 }
 
 .card-grid-rb {
@@ -443,7 +449,7 @@ input[type=button]:hover {
 
 /* Small mobile */
 @media screen 
-	and (min-width: 360px)
+	and (min-width: 321px)
 	and (max-width: 374px) {
 
 	.card-grid {
@@ -557,7 +563,7 @@ input[type=button]:hover {
 		grid-gap: 25px
 	}
 
-	.card-grid-b {
+	.card-grid-b, .f-grid {
 		grid-template-columns: repeat(1, 1fr);
 	}
 
@@ -1082,6 +1088,10 @@ input[type=button]:hover {
 
 	h6.game {
 		max-width: 50vw;
+	}
+
+	.nehh {
+		font-size: 55%;
 	}
 }
 
