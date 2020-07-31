@@ -1,0 +1,12 @@
+  var imgCount = 7;
+        var dir = 'images/bg/';
+        var randomCount = Math.round(Math.random() * (imgCount - 1)) + 1;
+        var images = new Array
+                images[1] = "aqua/01.jpg",
+                images[2] = "bg_2.jpg",
+                images[3] = "aqua/02.jpg",
+                images[4] = "aqua/03.jpg",
+                images[5] = "aqua/04.jpg",
+                images[6] = "aqua/05.jpg",
+                images[7] = "aqua/06.jpg",
+        document.getElementById("home").style.backgroundImage = "url(" + dir + images[randomCount] + ")"; 
