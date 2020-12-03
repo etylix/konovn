@@ -1,0 +1,12 @@
+  var imgCount = 7;
+        var dir = 'images/bg/';
+        var randomCount = Math.round(Math.random() * (imgCount - 1)) + 1;
+        var images = new Array
+                images[1] = "megumin/1.png",
+                images[2] = "megumin/9.jpg",
+                images[3] = "megumin/7.jpg",
+                images[4] = "megumin/3.png",
+                images[5] = "megumin/4.jpg",
+                images[6] = "megumin/5.png",
+                images[7] = "megumin/6.jpg",
+        document.getElementById("home").style.backgroundImage = "url(" + dir + images[randomCount] + ")"; 
