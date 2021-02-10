@@ -585,7 +585,12 @@ hr.vertical {
 }
 
 .loader {
+	max-width: 80%;
+	position: relative;
+}
 
+.loader img {
+	max-width: 80vw;
 }
 
 /* Commons  */
