@@ -11,6 +11,8 @@
   <link rel="preload" href="images/anime/movie.jpg" as="image" type="image/jpg">
   <link rel="preload" href="images/card/audio.jpg" as="image" type="image/jpg">
   <link rel="preload" href="css/main.css" as="style">
+  <link rel="stylesheet" type="text/css" href="https://sethusenthil.com/Product-Sans/api/font.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <meta property="og:url" content="https://konovn.space" />
   <meta property="og:type" content="article" />
@@ -33,7 +35,7 @@
       <a href="https://www.facebook.com/groups/konosuba.vietnam/"><i class="fab fa-facebook-f welc"></i></a>
     </div>
     <h2 class="welc-text">Xin chào!</h2>
-    <span class="btm">Cuộn xuống nào !</span>
+    <span class="btm" style="color: var(--accent-color);font-weight: bold;">Chúc mừng năm mới 2021 !</span>
     <i class="button fas fa-chevron-down"></i>
   </div>
 </div>
@@ -148,12 +150,12 @@
 </div>
 </div>
 
-<div class="hed bg-1 no-slc" id="confession" style="text-align: center;">
+<div class="hed bg-1 no-slc cfs" id="confession" style="width: 100%;">
 <h2 class="hed hed-title">Confession</h2>
 <script type="text/javascript">var submitted=false;</script>
 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){document.querySelector('#submit-button').value = 'Đã gửi!';}"></iframe>
-<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScRUMd0PzdiikaFwX9p6XVqBR1REleN3Igq-gMPpClKqNhKxg/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
-  <textarea type="text" id="submit-text" name="entry.1428481625" autocomplete="off" placeholder="Nhập confess bạn muốn gửi"></textarea>
+<form style="text-align: center;" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScRUMd0PzdiikaFwX9p6XVqBR1REleN3Igq-gMPpClKqNhKxg/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+  <textarea type="text" id="submit-text" name="entry.1428481625" autocomplete="off" placeholder="Nhập confess bạn muốn gửi..."></textarea>
   <input id="submit-button" type="submit" value="Gửi"></input>
   <input id="clear-button" type="button" value="Xóa"></input>
   <script type="text/javascript">
@@ -164,18 +166,13 @@ input.addEventListener('click', function () {
     textarea.value = '';
 }, false);
   </script>
-  <p style="padding-bottom: 15px; color: #7d7d7d; font-size: 70%;">(Confession sẽ được đăng và trả lời tại page <a href="https://www.facebook.com/AquaSamaIsNotUseless">Here we have quality Konosuba posts</a>.)</p>
 </form>
 </div>
 
-<hr style="margin:0">
-
 <!-- Footer -->
-<div class="footr no-slc" style="display: flex;">
-  <a style="max-width: 40px; margin: auto 0;" href="https://www.etylix.me"><img class="lg" src="images/v2d.png"></a>
-  <hr class="vertical">
-  <h2 style="margin: auto 0; font-family: 'Press Start 2P', cursive;">KonoVN</h2>
-  <h2 style="margin: auto 20px auto auto; text-align: right;">Thanks to<br><a href="#">Konosuba Việt Nam </a></h2>
+<div class="footr no-slc">
+  <p style="display: inline;">Made with luv by</p>
+  <a style="margin: auto 0;display: inline;" href="https://www.etylix.me"><h2 style="font-family: 'Product Sans';font-size: 20px;color: var(--default-bg-color);">etylix<b style="color: #ff4b44">.</b></h2></a>
 </div>
 
  <!-- Modal -->
@@ -218,6 +215,16 @@ input.addEventListener('click', function () {
     <p>Một quý tộc của dòng họ có địa vị cao nhất trong triều đình (chỉ sau hoàng tộc). Hành nghề Crusader- thập tự chinh. Cô là một cô gái vô cùng cứng cáp nhưng lại mắc bệnh M rất nặng</p>
 </div>
 <a class="close-modal"></a>
+
+<div class="loader-wrapper">
+  <span class="loader">
+    <img src="images/loading.gif">
+    <p style="text-align: center;">Đang tải...</p>
+  </span>
+</div>
+
+    <!-- Preloading JS -->
+<script type="text/javascript" src="https://etylix.me/assets/js/preloading.js"></script>
 
 <script src="js/popup.js"></script>
 </body>
