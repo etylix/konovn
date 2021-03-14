@@ -370,6 +370,7 @@ input[type=button]:hover {
   	right: 0;
   	top: 0;
   	filter: brightness(0.8);
+  	z-index: 1;
   	transition: 
     	filter 0.35s linear,
     	transform 0.35s linear;
@@ -511,24 +512,32 @@ hr.popup {
 	text-align: left;
 }
 
-.logo, .gright {
-	color: #fff;
-    position:absolute;
-    display: inline;
-    left: 0;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 24px;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  z-index: 50;
+  position: fixed;
+  width: 100%;
+  transition: 0.4s;
 }
 
-.gright {
-    right:0;
-    text-align: right;
+li {
+  float: left;
 }
 
-.gright a {
-	color: var(--default-text-color);
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
 }
 
+.nav-color {
+	background-color: red;
+}
 .content {
 	display: none;
 	padding: 10px;

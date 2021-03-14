@@ -30,10 +30,10 @@
 <!-- Welcome -->
 <div class="welc-bg no-slc" id="home">
   <div class="bg-filter welc">
-    <div class="logo"><p class="welc">KonosubaVN</p></div>
-    <div class="gright">
-      <a href="https://www.facebook.com/groups/konosuba.vietnam/"><i class="fab fa-facebook-f welc"></i></a>
-    </div>
+  <ul id="nav">
+    <li><a style="font-family: 'Press Start 2P', cursive" href="#home">KonoVN</a></li>
+    <li style="float: right;"><a href="https://www.facebook.com/groups/konosuba.vietnam/"><i style="padding: 0" class="fab fa-facebook-f welc"></i>/Quán Cafe Kono</a></li>
+  </ul>
     <h2 class="welc-text">Xin chào!</h2>
     <span class="btm">Cuộn xuống nào !</span>
     <i class="button fas fa-chevron-down"></i>
@@ -149,7 +149,7 @@
   </div>
 </div>
 </div>
-
+<!--
 <div class="hed bg-1 no-slc cfs" id="confession" style="width: 100%;">
 <h2 class="hed hed-title">Confession</h2>
 <script type="text/javascript">var submitted=false;</script>
@@ -168,7 +168,7 @@ input.addEventListener('click', function () {
   </script>
 </form>
 </div>
-
+--->
 <!-- Footer -->
 <div class="footr no-slc">
   <p style="display: inline;">Made with luv by</p>
@@ -227,5 +227,17 @@ input.addEventListener('click', function () {
 <script type="text/javascript" src="https://etylix.me/assets/js/preloading.js"></script>
 
 <script src="js/popup.js"></script>
+<script type="text/javascript">
+  // When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("nav").style.backgroundColor = "rgba(0,0,0,0.7)";
+  } else {
+    document.getElementById("nav").style.backgroundColor = "transparent";
+  }
+}
+</script>
 </body>
 </html>
