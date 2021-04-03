@@ -1,0 +1,1 @@
+$(".loader-wrapper").html('<span class="loader"><img src="assets/img/loading.gif"><p style="text-align: center;">Chờ xíu nha...</p></span>');
