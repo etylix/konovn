@@ -11,8 +11,10 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- jQuery Modal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 
-  <title>Konosuba Light Novel</title>
+  <title>Konosuba Việt Nam</title>
   <meta property="og:title" content="Konosuba Việt Nam">
   <meta property="og:site_name" content="Konosuba Việt Nam">
   <meta property="og:url" content="https://konovn.com">
@@ -48,40 +50,70 @@
     
       <!-- Swiper -->
   <div class="title" id="char">
-      <a href="#"><h3 style="display: inline;background-color: var(--accent-color);">Nhân vật</h3></a>
-      <a href="#" style="position: absolute;right: 15px;">Chi tiết</a>
+      <a href="#char" id="char"><h3 style="display: inline;background-color: var(--accent-color);">Nhân vật</h3></a>
+      <a href="#" class="text-moar">Chi tiết</a>
   </div>
   <div class="swiper-container char-container">
     <div class="swiper-wrapper">
-      <a href="#" class="swiper-slide char">
+      <a href="#about-megumin" rel="modal:open" class="swiper-slide char">
         <img class="char-img" src="assets/img/char/megumin.jpg">
         <p class="char-name" style="background-color: var(--megumin-color)">Megumin</p>
       </a>
+      <div id="about-megumin" class="modal">
+        <img class="char-img" src="assets/img/char/megumin.jpg">
+        <h3 style="color: var(--megumin-color)">Megumin</h3>
+        <p>Cô bé loli đệ nhất pháp sư của làng Hồng Ma Tộc (1 ngôi làng nổi tiếng như 1 lò đào tạo các ma pháp sư thượng thừa mắc bệnh Chunnibyou với những cái tên kì lạ). Hành nghề Archwizard – đại pháp sư, cô bé sở hữu một phép thuật nổ mạnh nhất-Explosion nhưng khi dùng xong thì bất động.</p>
+      </div>
       
-      <a href="#" class="swiper-slide char">
+      <a href="#about-aqua" rel="modal:open" class="swiper-slide char">
         <img class="char-img" src="assets/img/char/aqua.jpg">
         <p class="char-name" style="background-color: var(--aqua-color)">Aqua</p>
       </a>
+      <div id="about-aqua" class="modal">
+        <img class="char-img" src="assets/img/char/aqua.jpg">
+        <h3 style="color: var(--aqua-color)">Aqua</h3>
+        <p>Nữ thần vô dụng-sama, là cái tên mà Kazuma gọi cô trong những ngày đầu tiên ở thế giới. Hành nghề Archpriest – linh mục cấp cao. Tất cả các chỉ số đều rất cao, ngoại trừ may mắn và … trí tuệ. Hiển nhiên với điều đó, cô đã có những màn bóp team vô cùng đẳng cấp.</p>
+      </div>
 
-      <a href="#" class="swiper-slide char">
+      <a href="#about-darkness" rel="modal:open" class="swiper-slide char">
         <img class="char-img" src="assets/img/char/darkness.jpg">
         <p class="char-name" style="background-color: var(--darkness-color)">Darkness</p>
       </a>
+      <div id="about-darkness" class="modal">
+        <img class="char-img" src="assets/img/char/darkness.jpg">
+        <h3 style="color: var(--darkness-color)">Darkness</h3>
+        <p>Một quý tộc của dòng họ có địa vị cao nhất trong triều đình (chỉ sau hoàng tộc). Hành nghề Crusader- thập tự chinh. Cô là một cô gái vô cùng cứng cáp nhưng lại mắc bệnh M rất nặng.</p>
+      </div>
 
-      <a href="#" class="swiper-slide char">
+      <a href="#about-kazuma"rel="modal:open" class="swiper-slide char">
         <img class="char-img" src="assets/img/char/kazuma.jpg">
         <p class="char-name" style="background-color: var(--kazuma-color)">Kazuma</p>
       </a>
+      <div id="about-kazuma" class="modal">
+        <img class="char-img" src="assets/img/char/kazuma.jpg">
+        <h3 style="color: var(--kazuma-color)">Kazuma</h3>
+        <p>1 NEET, OTAKU chính hiệu, là người có chỉ số may mắn cao nhất đội và hành nghề Adventurer - mạo hiểm giả.</p>
+      </div>
 
-      <a href="#" class="swiper-slide char">
+      <a href="#about-iris" rel="modal:open" class="swiper-slide char">
         <img class="char-img" src="assets/img/char/iris.jpg">
         <p class="char-name" style="background-color: var(--iris-color)">Iris</p>
       </a>
+      <div id="about-iris" class="modal">
+        <img class="char-img" src="assets/img/char/iris.jpg">
+        <h3 style="color: var(--iris-color)">Iris</h3>
+        <p>(Konosuba Fandom)Iris có tính cách như một cô em gái nhưng cũng cư xử rất tốt bụng và vui vẻ, hầu như lúc nào cô ấy cũng nở một nụ cười trên môi.</p>
+      </div>
 
-      <a href="#" class="swiper-slide char">
+      <a href="#about-eris" rel="modal:open" class="swiper-slide char">
         <img class="char-img" src="assets/img/char/eris.jpg">
         <p class="char-name" style="background-color: var(--eris-color)">Eris</p>
       </a>
+      <div id="about-eris" class="modal">
+        <img class="char-img" src="assets/img/char/eris.jpg">
+        <h3 style="color: var(--eris-color)">Eris</h3>
+        <p>Vị thần với 2 bức tường. Tuy có tính cách trẻ con nhưng cô lại tốt bụng và luôn tôn trọng người khác. "Her scent is noted to be very fragrant".</p>
+      </div>
 
     </div>
   </div>
@@ -89,8 +121,8 @@
   </div>
 
   <div class="title" id="story">
-    <a href="#"><h3 style="display: inline;background-color: var(--accent-color);">Nội dung cốt truyện</h3></a>
-    <a href="#" style="position: absolute;right: 15px;">Chi tiết</a>
+    <a href="#story" id="story"><h3 style="display: inline;background-color: var(--accent-color);">Nội dung cốt truyện</h3></a>
+    <a href="#" class="text-moar">Chi tiết</a>
   </div>
   <section class="story">
     <div href="#" class="scr-cont">
@@ -104,44 +136,44 @@
 
       <!-- Swiper -->
   <div class="title" id="menu">
-      <a href="#"><h3 style="display: inline;background-color: var(--accent-color);">Chỉ mục</h3></a>
-      <a href="#" style="position: absolute;right: 15px;">Chi tiết</a>
+      <a href="#menu" id="menu"><h3 style="display: inline;background-color: var(--accent-color);">Chỉ mục</h3></a>
+      <a href="#" class="text-moar">Chi tiết</a>
   </div>
   <div class="swiper-container item-container">
     <div class="swiper-wrapper">
 
-      <a href="#" class="swiper-slide item">
-        <img class="item-img" src="assets/img/bg/bg_1.jpg">
+      <a href="ln" class="swiper-slide item">
+        <img class="item-img" src="assets/img/ln/eng.jpg">
         <p class="item-name">Phần truyện chính</p>
         <p class="second-item-name">Light Novel</p>
       </a>
 
-      <a href="#" class="swiper-slide item">
-        <img class="item-img" src="assets/img/bg/bg_2.jpg">
+      <a href="spinoff" class="swiper-slide item">
+        <img class="item-img" src="assets/img/so/ex.jpg">
         <p class="item-name">Phần ngoại truyện</p>
         <p class="second-item-name">Spin-of</p>
       </a>
 
-      <a href="#" class="swiper-slide item">
-        <img class="item-img" src="assets/img/bg/bg_3.jpg">
+      <a href="manga" class="swiper-slide item">
+        <img class="item-img" src="assets/img/manga.jpg">
         <p class="item-name">Phần truyện tranh</p>
         <p class="second-item-name">Manga</p>
       </a>
 
-      <a href="#" class="swiper-slide item">
-        <img class="item-img" src="assets/img/bg/bg_4.jpg">
+      <a href="anime" class="swiper-slide item">
+        <img class="item-img" src="assets/img/anime/movie.jpg">
         <p class="item-name">Anime</p>
         <p class="second-item-name"></p>
       </a>
 
-      <a href="#" class="swiper-slide item">
-        <img class="item-img" src="assets/img/bg/bg_5.jpg">
+      <a href="audio" class="swiper-slide item">
+        <img class="item-img" src="assets/img/audio/ouchi.jpg">
         <p class="item-name">Nhạc</p>
         <p class="second-item-name"></p>
       </a>
 
-      <a href="#" class="swiper-slide item">
-        <img class="item-img" src="assets/img/bg/bg_6.jpg">
+      <a href="game" class="swiper-slide item">
+        <img class="item-img" src="assets/img/game/game.jpg">
         <p class="item-name">Game</p>
         <p class="second-item-name"></p>
       </a>
@@ -151,8 +183,7 @@
 
   <!-- Footer -->
   <ul class="footr">
-    <li><a style="font-size: 16px;color: #000;padding-right:4px;">Made with luv by</a></li>
-    <li ><a target=”_blank” rel=”noopener noreferrer” href="https://www.etylix.me" style="padding-left: 0;"><h2 style="font-family: 'Product Sans';font-size: 20px;color: var(--default-bg-color);">etylix<b style="color: var(--etylix-accent)">.</b></h2></a></li>
+    <li><a class="footr-text">Made with luv by</a><a href="#" class="footr-lg" style="font-family: 'Product Sans'">etylix<b style="color: var(--etylix-accent)">.</b></a></li>
     <li style="float: right;"><a href="mailto:admin@konovn.com" style="color: #000">admin@konovn.com</a></li>
   </ul>
 
@@ -164,7 +195,6 @@
   <script>
     var swiper = new Swiper('.swiper-container', {
       slidesPerView: 2,
-      spaceBetween: 0,
       freeMode: true,
       mousewheel: true,
       breakpoints: {
